@@ -1,0 +1,17 @@
+.body {
+	font-family: 'Vollkorn', Serif;
+	font-size: 50px;
+	font-family: : 'Raleway', Sans-Serif;
+	font-size: 15px;
+}
+
+/* Nav Bar */
+
+.fixed-top-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
