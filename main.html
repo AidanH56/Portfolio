@@ -37,7 +37,7 @@
 	
 
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="nav navbar-nav navbar-right ml-auto mr-3">
+	    <ul class="nav navbar-nav navbar-right ml-auto mr-3 smooth-scroll">
 	      <li class="nav-item">
 	        <a class="nav-link js-scroll-trigger-active" href="#case-studies">Case Studies</a>
 	      </li>
@@ -58,9 +58,8 @@
 	 	</div>
 	</div>
 
-	<div class="container">
+	<div class="container" id="case-studies">
 
-		<a name="case-studies"></a>
 		
 		<div class="row">
 		  <div class="col-8">
@@ -105,9 +104,8 @@
 <footer class="page-footer bg-dark center-on-small-only pt-0">
 
     <!--Footer Links-->
-    <div class="container">
+    <div class="container" id="contact-footer">
 
-    	<a name="contact-footer"></a>
 
         <!--Grid row-->
 
@@ -137,12 +135,12 @@
             <div class="col-md-4">
 
                 <div class="footer-socials mb-5 my-2">
-                    <!--Facebook-->
-                    <a class="email" href="#"><img src="images/email-icon.png" class="mr-4" /></a>
-                    <!--Twitter-->
-                    <a class="linked-in" href="#"><img src="images/linkedin-icon.png" class="mr-4" /></a>
-                    <!--Google +-->
-                    <a class="github" href="#"><img src="images/github-icon.png" class="mr-4" /></a>
+                    <!--Email-->
+                    <a class="email" href="https://Aidan_Herlong@alumni.baylor.edu"><img src="images/email-icon.png" class="mr-4"/></a>
+                    <!--LI-->
+                    <a class="linked-in" href="https://www.linkedin.com/in/aidanherlong/"><img src="images/linkedin-icon.png" class="mr-4" /></a>
+                    <!--GH-->
+                    <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png" class="mr-4" /></a>
                 </div>
             </div>
             <div class="col-md-3"></div>
@@ -165,6 +163,23 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		
+		$('a.smooth-scroll[href*="#"]:not([href="#"])').click(function() {
+		  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		    var target = $(this.hash);
+		    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		    if (target.length) {
+		      $('html, body').animate({
+		        scrollTop: target.offset().top
+		      }, 1000);
+		      return false;
+		    }
+		  }
+		}); 
+
+	</script>
 
 
 </body>
