@@ -1,0 +1,123 @@
+/* MAIN PAGE */
+
+/* Nav Bar*/
+
+.portfolio-logo {
+	width: 75%;
+}
+
+/* Hero */
+
+.hero-header {
+	margin-top: 150px;
+}
+
+.p-hero {
+	margin-top: -16px;
+}
+
+/* Body Content*/
+
+/* ComicCrusade */
+
+.cc-header {
+	color: #c68f62; 
+	margin-top: 255px;
+}
+
+.cc-img {
+	margin-top: 120px; 
+	width: 65%;
+}
+
+/* FoodSwitch */ 
+
+.fs-header {
+	color: #6db1b3; 
+	margin-top: 240px;
+}
+
+.fs-img {
+	width: 80%; 
+	margin-top: 100px; 
+	margin-bottom: 100px;
+}
+
+
+
+
+
+/* ABOUT ME PAGE */
+.about-jumbo {
+	background-image: url('../images/about-hero-img.png');
+	background-size: 100%;
+	border-radius: 0;
+}
+
+.about-me-hr1 {
+	margin-top: 150px;
+}
+
+.avatar-img {
+	width: 25%;
+}
+
+
+
+/* COMICCRUSADE CASE STUDY PAGE */
+
+/* Hero for CC */
+
+.cc-jumbo {
+	background-image: url('../images/cc-hero-bg-img2.png');
+	background-size: 83%;
+	border-radius: 0;
+}
+
+.cc-hero-hr1 {
+	margin-top: 150px;
+}
+
+.cc-hero-hr2 {
+	margin-top: 8px;
+	font-family: "Raleway";
+}
+
+.cc-hero-p {
+	width: 65%;
+	margin-top: 24px; 
+	margin-bottom: 15px;
+	margin-left: 105px;
+}
+
+.cc-hero-hr1, .cc-hero-hr2, .cc-hero-p {
+	color: #ffffff;
+}
+
+.cc-challenge-hr, .cc-task-hr, .cc-roles-hr {
+	font-family: "Raleway";
+}
+
+.cc-user-testing-img {
+	width: 65%;
+}
+
+.cc-prototype-img {
+	width: 55%;
+}
+
+/* FOODSWITCH CASE STUDY PAGE*/
+
+.fs-jumbo {
+	background-image: url('../images/fs-hero-bg-img.png');
+	background-size: 92%;
+	border-radius: 0;
+}
+
+.fs-user-testing-img {
+	width: 150%;
+}
+
+.fs-prototype-img {
+	width: 150%;
+}

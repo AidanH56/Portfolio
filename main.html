@@ -29,8 +29,8 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		  <a class="navbar-brand" href="main.html"><img src="images/home-logo.png" class="img-fluid ml-3"/></a>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		  <a class="navbar-brand" href="main.html"><img src="images/home-logo-final-img.png" class="portfolio-logo img-fluid ml-3"/></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -39,35 +39,39 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="nav navbar-nav navbar-right ml-auto mr-3">
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Case Studies</a>
+	        <a class="nav-link js-scroll-trigger-active" href="#case-studies">Case Studies</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
+	        <a class="nav-link js-scroll-trigger-active" href="#contact-footer">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
 	</nav>
 
-	<div class="jumbotron text-center">
-	  <h1 class="display-6" style="margin-top: 150px;">Aidan D. Herlong</h1>
-	  <p class="lead mt-2" style="margin-top: -16px;">UX Designer from Houston, TX</p>
-	  <p class="lead">
-	    <a class="btn btn-outline-dark btn-lg mt-4" href="#" role="button">ABOUT ME</a>
-	  </p>
+	<div class="jumbotron text-center animated fadeIn">
+		<div class="container-fluid">
+	  		<h1 class="display-6 hero-header animated fadeIn">Aidan D. Herlong</h1>
+	  		<p class="lead mt-2 p-hero animated fadeIn">UX Designer from Houston, TX</p>
+	 	    <p class="lead">
+	   	    	<a class="btn btn-outline-dark btn-lg mt-4 animated fadeIn" href="aboutme.html" role="button">ABOUT ME</a>
+	 	    </p>
+	 	</div>
 	</div>
 
 	<div class="container">
+
+		<a name="case-studies"></a>
 		
 		<div class="row">
 		  <div class="col-8">
 		  	
-		  	<a class="comic-crusade-img"><img src="images/comic-crusade-img.png" class="img-fluid float-left" style="margin-top: 120px;" /></a>
+		  	<a class="comic-crusade-img"><img src="images/comic-crusade-img.png" class="cc-img img-fluid float-left"/></a>
 
 		  </div>
 		  <div class="col-4">
-		  	<h3 class="display" style="margin-top: 290px;">ComicCrusade</h3>
-		  	<p class="lead">Android app dedicated to finding the comics you’re looking for in nearby stores.</p>
-		  	<a class="btn btn-outline-dark btn-lg" href="comiccrusade.html" role="button">SEE CASE STUDY</a>
+		  	<h1 class="cc-header">ComicCrusade</h3>
+		  	<p class="lead mt-2">Android app dedicated to finding the comics you’re looking for in nearby stores.</p>
+		  	<a class="btn btn-outline-dark btn-lg mt-2" href="comiccrusade.html" role="button">SEE CASE STUDY</a>
 
 		  </div>
 		</div>
@@ -79,9 +83,9 @@
 		<div class="row">
 		 
 		  <div class="col-4">
-		  	<h3 class="display" style="margin-top: 290px;">FoodSwitch</h3>
-		  	<p class="lead">A web-based app for people who want to live a healthier lifestyle.</p>
-		  	<a class="btn btn-outline-dark btn-lg" href="foodswitch.html" role="button">SEE CASE STUDY</a>
+		  	<h1 class="fs-header">FoodSwitch</h3>
+		  	<p class="lead mt-2">A web-based app for people who want to live a healthier lifestyle.</p>
+		  	<a class="btn btn-outline-dark btn-lg mt-2" href="foodswitch.html" role="button">SEE CASE STUDY</a>
 
 		  </div>
 
@@ -89,7 +93,7 @@
 
 		  <div class="col-6">
 		  	
-		  	<a class="foodswitch-img"><img src="images/foodswitch-img.png" class="img-fluid float-right" style="margin-top: 100px; margin-bottom: 100px;" /></a>
+		  	<a class="foodswitch-img"><img src="images/foodswitch-img.png" class="fs-img img-fluid float-right"/></a>
 
 		  </div>
 
@@ -102,6 +106,8 @@
 
     <!--Footer Links-->
     <div class="container">
+
+    	<a name="contact-footer"></a>
 
         <!--Grid row-->
 
@@ -130,7 +136,7 @@
             <div class="col-md-5"></div>
             <div class="col-md-4">
 
-                <div class="footer-socials mb-5 my-3">
+                <div class="footer-socials mb-5 my-2">
                     <!--Facebook-->
                     <a class="email" href="#"><img src="images/email-icon.png" class="mr-4" /></a>
                     <!--Twitter-->
