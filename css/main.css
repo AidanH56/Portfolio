@@ -70,8 +70,9 @@
 
 .cc-jumbo {
 	background-image: url('../images/cc-hero-bg-img2.png');
-	background-size: 83%;
+	background-size: 100%;
 	border-radius: 0;
+	background-repeat: no-repeat;
 }
 
 .cc-hero-hr1 {
@@ -110,8 +111,9 @@
 
 .fs-jumbo {
 	background-image: url('../images/fs-hero-bg-img.png');
-	background-size: 92%;
+	background-size: 100%;
 	border-radius: 0;
+	background-repeat: no-repeat;
 }
 
 .fs-user-testing-img {
@@ -120,4 +122,79 @@
 
 .fs-prototype-img {
 	width: 150%;
+}
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 320px) {
+
+/* Main Page */
+
+	.cc-img {
+		width: 100%;
+	}
+
+	.fs-img {
+		width: 100%;
+	}
+
+}
+
+@media (max-width: 1440px) {
+
+/* Main Page */
+
+		.cc-img {
+			width: 65%;
+		}
+
+		.footer-socials {
+			margin-left: 90px;
+		}
+
+		.fs-img {
+			width: 85%;
+		}
+
+	}
+
+@media (max-width: 1024px) {
+
+/* Main Page */
+
+		.footer-socials {
+			margin-left: 60px;
+		}
+
+
+	}
+
+@media (max-width: 768px) {
+
+/* Main Page */
+
+	.cc-header {
+		margin-top: 150px;
+	}
+
+	.cc-img {
+		width: 65%;
+	}
+
+	.fs-header {
+		margin-top: 120px;
+	}
+
+	.fs-img {
+		width: 85%;
+	}
+
+	.fs-btn {
+		margin-bottom: 50px;
+	}
+
+	.footer-socials {
+		margin-left: 20px;
+	}
+
 }

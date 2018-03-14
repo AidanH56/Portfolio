@@ -20,8 +20,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i" rel="stylesheet">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
 	
@@ -29,23 +29,26 @@
 
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<!-- Nav Bar-->
+
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		  <a class="navbar-brand" href="main.html"><img src="images/home-logo-final-img.png" class="portfolio-logo img-fluid ml-3"/></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collpase_target">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 	
 
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="nav navbar-nav navbar-right ml-auto mr-3">
-	      <li class="nav-item">
-	        <a class="nav-link js-scroll-trigger-active" href="#case-studies">Case Studies</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link js-scroll-trigger-active" href="#contact-footer">Contact</a>
-	      </li>
-	    </ul>
-	  </div>
+		  <div class="collapse navbar-collapse" id="collpase_target">
+		    <ul class="nav navbar-nav navbar-right ml-auto mr-3">
+		      <li class="nav-item">
+		        <a class="nav-link" href="main.html#case-studies">Case Studies</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#contact-footer">Contact</a>
+		      </li>
+		    </ul>
+		  </div>
 	</nav>
 
 	<div class="jumbotron text-center animated fadeIn">
@@ -62,15 +65,15 @@
 
 		
 		<div class="row">
-		  <div class="col-8">
+		  <div class="col-md-8">
 		  	
 		  	<a class="comic-crusade-img"><img src="images/comic-crusade-img.png" class="cc-img img-fluid float-left"/></a>
 
 		  </div>
-		  <div class="col-4">
-		  	<h1 class="cc-header">ComicCrusade</h3>
-		  	<p class="lead mt-2">Android app dedicated to finding the comics you’re looking for in nearby stores.</p>
-		  	<a class="btn btn-outline-dark btn-lg mt-2" href="comiccrusade.html" role="button">SEE CASE STUDY</a>
+		  <div class=" cc-container col-md-4">
+		  	<h1 class="cc-header">ComicCrusade</h1>
+		  	<p class="cc-p lead mt-2">Android app dedicated to finding the comics you’re looking for in nearby stores.</p>
+		  	<a class="btn btn-outline-dark btn-lg mt-2 cc-btn" href="comiccrusade.html" role="button">SEE CASE STUDY</a>
 
 		  </div>
 		</div>
@@ -81,16 +84,16 @@
 		
 		<div class="row">
 		 
-		  <div class="col-4">
+		  <div class="col-md-4">
 		  	<h1 class="fs-header">FoodSwitch</h3>
-		  	<p class="lead mt-2">A web-based app for people who want to live a healthier lifestyle.</p>
-		  	<a class="btn btn-outline-dark btn-lg mt-2" href="foodswitch.html" role="button">SEE CASE STUDY</a>
+		  	<p class="fs-p lead mt-2">A web-based app for people who want to live a healthier lifestyle.</p>
+		  	<a class="btn btn-outline-dark btn-lg fs-btn mt-2" href="foodswitch.html" role="button">SEE CASE STUDY</a>
 
 		  </div>
 
-		  <div class="col-2"></div>
+		  <div class="col-md-2"></div>
 
-		  <div class="col-6">
+		  <div class="col-md-6">
 		  	
 		  	<a class="foodswitch-img"><img src="images/foodswitch-img.png" class="fs-img img-fluid float-right"/></a>
 
@@ -131,8 +134,8 @@
 
             <!--Grid column-->
 
-            <div class="col-md-5"></div>
-            <div class="col-md-4">
+            <div class="col-4 col-md-4 col-sm-3"></div>
+            <div class="col-5 col-md-5 col-sm-6">
 
                 <div class="footer-socials mb-5 my-2">
                     <!--Email-->
@@ -143,7 +146,7 @@
                     <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png" class="mr-4" /></a>
                 </div>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-3 col-md-3 col-sm-3"></div>
             <!--Grid column-->
         </div>
         <!--Grid row-->
@@ -160,26 +163,11 @@
 
 </footer>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-	<script type="text/javascript">
-		
-		$('a.smooth-scroll[href*="#"]:not([href="#"])').click(function() {
-		  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-		    var target = $(this.hash);
-		    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		    if (target.length) {
-		      $('html, body').animate({
-		        scrollTop: target.offset().top
-		      }, 1000);
-		      return false;
-		    }
-		  }
-		}); 
-
-	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js.map"></script>
 
 
 </body>
