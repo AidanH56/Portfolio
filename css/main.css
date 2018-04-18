@@ -1,22 +1,57 @@
 /* MAIN PAGE */
 
+* { border: 1px solid black; }
+
 /* Nav Bar*/
 
+.main-nav {
+	background-color: #4c212c;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
 .portfolio-logo {
-	width: 75%;
+	margin-right: 12px;
 }
 
 /* Hero */
 
+.main-jumbo {
+	background-image: url('../images/hero-img.jpg');
+}
+
+.home-hero {
+	
+}
+
 .hero-header {
-	margin-top: 230px;
+	margin-top: 80px;
+	margin-bottom: 25px;
+	font-size: 4rem;
+	color: #ffffff;
 }
 
 .p-hero {
-	margin-top: -16px;
+	color: #ffffff;
+}
+
+.hero-btn {
+
 }
 
 /* Body Content*/
+
+/* Universal Classes and Pairs */
+
+.main-jumbo, .cc-jumbo, .fs-jumbo, .about-jumbo {
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+}
+
+.swot-hrs {
+	font-size: 2rem;
+	margin-top: -70px;
+}
 
 /* ComicCrusade */
 
@@ -27,7 +62,6 @@
 
 .cc-img {
 	margin-top: 120px; 
-	width: 65%;
 }
 
 /* FoodSwitch */ 
@@ -38,7 +72,6 @@
 }
 
 .fs-img {
-	width: 80%; 
 	margin-top: 100px; 
 	margin-bottom: 100px;
 }
@@ -70,9 +103,6 @@
 
 .cc-jumbo {
 	background-image: url('../images/cc-hero-bg-img2.png');
-	background-size: 100%;
-	border-radius: 0;
-	background-repeat: no-repeat;
 }
 
 .cc-hero-hr1 {
@@ -99,6 +129,45 @@
 	font-family: "Raleway";
 }
 
+
+.cc-swot {
+	margin-top: 35px;
+}
+
+.cc-swot-2 {
+	margin-bottom: 35px;
+}
+
+.cc-sw-strengths, .cc-sw-weaknesses, .cc-sw-opportunities, .cc-sw-threats {
+	padding: 90px;
+	border: 10px solid #616161;
+}
+
+.swot-hrs-white, .p-swot-white {
+	color: #dfdee0;
+}
+
+.cc-sw-strengths {
+
+	background-color: #2CC36B;
+}
+
+.cc-sw-weaknesses {
+	background-color: #e23b4b;
+}
+
+.cc-sw-opportunities {
+	background-color: #f4be84;
+}
+
+.cc-sw-threats {
+	background-color: #c12f36;
+}
+
+.p-swot {
+	font-size: 1.3rem;
+}
+
 .cc-user-testing-img {
 	width: 65%;
 }
@@ -111,9 +180,6 @@
 
 .fs-jumbo {
 	background-image: url('../images/fs-hero-bg-img.png');
-	background-size: 100%;
-	border-radius: 0;
-	background-repeat: no-repeat;
 }
 
 .fs-user-testing-img {
@@ -124,81 +190,131 @@
 	width: 150%;
 }
 
-/* MEDIA QUERIES*/
 
-@media (min-width: 320px) {
+/* Media Queries */
 
-/* Main Page */
+@media(min-width: 320px) {
 
-	.cc-img {
-		width: 100%;
+
+	.hero-header {
+
+		margin-top: 155px;
 	}
-
-	.fs-img {
-		width: 100%;
-	}
-
-}
-
-@media (max-width: 1440px) {
-
-/* Main Page */
-
-		.hero-header {
-			margin-top: 155px;
-		}
-
-		.cc-img {
-			width: 65%;
-		}
-
-		.footer-socials {
-			margin-left: 90px;
-		}
-
-		.fs-img {
-			width: 85%;
-		}
-
-	}
-
-@media (max-width: 1024px) {
-
-/* Main Page */
-
-		.footer-socials {
-			margin-left: 60px;
-		}
-
-
-	}
-
-@media (max-width: 768px) {
-
-/* Main Page */
 
 	.cc-header {
-		margin-top: 150px;
+
+		margin-top: 55px;
+
 	}
 
 	.cc-img {
-		width: 65%;
+
+		margin-top: 55px;
 	}
 
 	.fs-header {
-		margin-top: 120px;
+
+		margin-top: 55px;
 	}
 
 	.fs-img {
-		width: 85%;
+
+		margin-top: 55px;
+		margin-bottom: 85px;
 	}
 
-	.fs-btn {
-		margin-bottom: 50px;
+	/*Footer*/
+
+	.email {
+		margin-left: 25px;
+	}
+}
+
+@media(min-width: 375px) {
+
+	/*Footer*/
+
+	.email {
+		margin-left: 45px;
+	}
+}
+
+@media(min-width: 425px) {
+
+	.email {
+		margin-left: 58px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.email {
+		margin-left: 38px;
 	}
 
-	.footer-socials {
-		margin-left: 20px;
+	.p-hero {
+		width: 75%;
+		/* margin-left: 80px; */
+	}
+
+
+	.cc-header {
+		margin-top: 74px;
+	}
+
+	.fs-header{
+		margin-top: 65px;
+	}
+
+	.fs-img {
+		margin-top: 40px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.hero-header {
+		font-size: 4.5rem;
+	}
+
+	.p-hero {
+		width: 55%;
+		/* margin-left: 210px; */
+	}
+
+	.cc-header {
+		margin-top: 125px;
+	}
+
+	.fs-header {
+		margin-top: 130px;
+	}
+
+	.email {
+		margin-left: 78px;
 	}
 
 }
+
+
+@media (min-width: 1440px) {
+
+	.home-hero {
+	margin-top: 80px;
+	}
+
+	.hero-header {
+		font-size: 5rem;
+	}
+
+	.p-hero {
+		width: 35%;
+		/* margin-left: 440px; */
+	}
+
+	.email {
+		margin-left: 108px;
+	}
+}
+
+
