@@ -9,6 +9,11 @@
 	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
 }
 
+.navbar-brand {
+
+	margin-right: 0rem;
+}
+
 .portfolio-logo {
 	margin-right: 12px;
 }
@@ -42,6 +47,7 @@
 
 /* Universal Classes and Pairs */
 
+
 .main-jumbo, .cc-jumbo, .fs-jumbo, .about-jumbo {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -51,6 +57,24 @@
 .swot-hrs {
 	font-size: 2rem;
 	margin-top: -70px;
+}
+
+.persona-hr {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.quote {
+	border-left: 4px solid;
+	padding: 0 4%;
+	margin-top: 24px;
+	margin-left: 4%;
+	font-size: 1.1rem;
+	color: #9BA0B3;
+}
+
+.deliverable-links {
+	font-size: 1.2rem;
 }
 
 /* ComicCrusade */
@@ -102,7 +126,8 @@
 /* Hero for CC */
 
 .cc-jumbo {
-	background-image: url('../images/cc-hero-bg-img2.png');
+	background-image: url('../images/cc-hero-img.png');
+	background-size: cover;
 }
 
 .cc-hero-hr1 {
@@ -118,11 +143,14 @@
 	width: 65%;
 	margin-top: 24px; 
 	margin-bottom: 15px;
-	margin-left: 105px;
 }
 
 .cc-hero-hr1, .cc-hero-hr2, .cc-hero-p {
 	color: #ffffff;
+}
+
+.cc-hr {
+	font-weight: 600;
 }
 
 .cc-challenge-hr, .cc-task-hr, .cc-roles-hr {
@@ -149,11 +177,11 @@
 
 .cc-sw-strengths {
 
-	background-color: #2CC36B;
+	background-color: #f88337;
 }
 
 .cc-sw-weaknesses {
-	background-color: #e23b4b;
+	background-color: #c6622a;
 }
 
 .cc-sw-opportunities {
@@ -161,20 +189,32 @@
 }
 
 .cc-sw-threats {
-	background-color: #c12f36;
+	background-color: #9b532c;
 }
 
 .p-swot {
 	font-size: 1.3rem;
 }
 
-.cc-user-testing-img {
-	width: 65%;
+.cc-sketches-1 {
+	margin-top: 58px;
 }
+
+.cc-sketches-2 {
+	margin-top: 36px;
+}
+
+.cc-sketches-3 {
+	margin-top: 76px;
+}
+
+ .cc-user-testing-img {
+	width: 88%;
+} 
 
 .cc-prototype-img {
 	width: 55%;
-}
+} 
 
 /* FOODSWITCH CASE STUDY PAGE*/
 
@@ -223,6 +263,36 @@
 		margin-bottom: 85px;
 	}
 
+	.flows, .stories {
+		display: none;
+	}
+
+	/* COMICRUSADE PAGE */
+
+	.cc-carl-persona-img {
+		display: none;
+	}
+
+	.cc-sketches-1 {
+	margin-top: 0px;
+	}
+
+	.cc-sketches-2 {
+	margin-top: 0px;
+	}
+
+	.cc-sketches-3 {
+	margin-top: 0px;
+	}
+
+	.cc-inventory-final-mockup-2 {
+		margin-bottom: 24px;
+	}
+
+	.cc-user-testing-img {
+		width: 100%;
+	}
+
 	/*Footer*/
 
 	.email {
@@ -257,18 +327,69 @@
 		/* margin-left: 80px; */
 	}
 
+	.flows, .stories {
+		display: inherit;
+	}
+
+/* COMICCRUSADE PAGE */
+
+	.cc-jumbo {
+
+		background-image: url('../images/cc-hero-tablet-img.png');
+	}
+
+	.cc-user-research-img-g1 {
+		margin-top: 20px;
+	}
+
+	.cc-user-research-img-g2 {
+		margin-top: 20px;
+	}
+
+	.cc-p-urpoint-1 {
+		margin-top: 12px;
+	}
+
+	.cc-carl-persona-img {
+		display: initial;
+	}
+
+	.cc-mobile-persona {
+		display: none;
+	}
+
+	.cc-sketches-1 {
+		margin-top: 58px;
+	}
+
+	.cc-sketches-2 {
+		margin-top: 36px;
+	}
+
+	.cc-sketches-3 {
+		margin-top: 76px;
+	}
+
+	 .cc-user-testing-img {
+		width: 88%;
+	} 
+
+	.cc-header, .fs-header {
+		font-size: 2rem;
+	}
 
 	.cc-header {
-		margin-top: 74px;
+		margin-top: 84px;
 	}
 
 	.fs-header{
-		margin-top: 65px;
+		margin-top: 95px;
 	}
 
 	.fs-img {
 		margin-top: 40px;
 	}
+
 }
 
 @media (min-width: 1024px) {
@@ -282,16 +403,60 @@
 		/* margin-left: 210px; */
 	}
 
+	.cc-jumbo {
+		background-image: url('../images/cc-hero-img.png');
+	}
+
+	.cc-header, .fs-header {
+		font-size: 3rem;
+	}
+
 	.cc-header {
 		margin-top: 125px;
+	}
+
+	.cc-user-research-img-g1, .cc-user-research-img-g2 {
+		margin-top: 0px;
+	}
+
+	.cc-p-urpoint-1 {
+		margin-top: 32px;
+	}
+
+	.cc-p-urpoint-2, .cc-p-urpoint-3, .cc-p-urpoint-4 {
+		margin-top: 20px;
 	}
 
 	.fs-header {
 		margin-top: 130px;
 	}
 
+	.cc-hero-p {
+	width: 50%;
+    }
+
 	.email {
 		margin-left: 78px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+	.cc-header, .fs-header {
+		margin-top: 180px;
+	}
+
+	.cc-p, .fs-p {
+		width: 75%;
+	}
+
+	.cc-p-urpoint-2 {
+		margin-top: 32px;
+	}
+
+	.email {
+		margin-left: 110px;
 	}
 
 }
@@ -312,9 +477,11 @@
 		/* margin-left: 440px; */
 	}
 
-	.email {
-		margin-left: 108px;
-	}
+	.cc-hero-p {
+	width: 40%;
+    }
+
+	
 }
 
 
