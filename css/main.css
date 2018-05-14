@@ -1,6 +1,6 @@
 /* MAIN PAGE */
 
-* { border: 1px solid black; }
+/* * { border: 1px solid black; } */
 
 /* Nav Bar*/
 
@@ -54,9 +54,21 @@
 	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
 }
 
+.cs-swot {
+	margin-top: 35px;
+}
+
+.cs-swot-2 {
+	margin-bottom: 35px;
+}
+
+.cs-sw-strengths, .cs-sw-weaknesses, .cs-sw-opportunities, .cs-sw-threats {
+	padding: 10px;
+	border: 7px solid #616161;
+}
+
 .swot-hrs {
-	font-size: 2rem;
-	margin-top: -70px;
+	font-size: 1.7rem;
 }
 
 .persona-hr {
@@ -75,6 +87,33 @@
 
 .deliverable-links {
 	font-size: 1.2rem;
+}
+
+.cs-hero-hr1 {
+	margin-top: 150px;
+}
+
+.cs-hero-hr2 {
+	margin-top: 8px;
+	font-family: "Raleway";
+}
+
+.cs-hero-p {
+	width: 65%;
+	margin-top: 24px; 
+	margin-bottom: 15px;
+}
+
+.cs-hero-hr1, .cs-hero-hr2, .cs-hero-p {
+	color: #ffffff;
+}
+
+.cs-hr {
+	font-weight: 600;
+}
+
+.cs-challenge-hr, .cs-task-hr, .cs-roles-hr {
+	font-family: "Raleway";
 }
 
 /* ComicCrusade */
@@ -120,7 +159,6 @@
 }
 
 
-
 /* COMICCRUSADE CASE STUDY PAGE */
 
 /* Hero for CC */
@@ -128,47 +166,6 @@
 .cc-jumbo {
 	background-image: url('../images/cc-hero-img.png');
 	background-size: cover;
-}
-
-.cc-hero-hr1 {
-	margin-top: 150px;
-}
-
-.cc-hero-hr2 {
-	margin-top: 8px;
-	font-family: "Raleway";
-}
-
-.cc-hero-p {
-	width: 65%;
-	margin-top: 24px; 
-	margin-bottom: 15px;
-}
-
-.cc-hero-hr1, .cc-hero-hr2, .cc-hero-p {
-	color: #ffffff;
-}
-
-.cc-hr {
-	font-weight: 600;
-}
-
-.cc-challenge-hr, .cc-task-hr, .cc-roles-hr {
-	font-family: "Raleway";
-}
-
-
-.cc-swot {
-	margin-top: 35px;
-}
-
-.cc-swot-2 {
-	margin-bottom: 35px;
-}
-
-.cc-sw-strengths, .cc-sw-weaknesses, .cc-sw-opportunities, .cc-sw-threats {
-	padding: 90px;
-	border: 10px solid #616161;
 }
 
 .swot-hrs-white, .p-swot-white {
@@ -193,7 +190,7 @@
 }
 
 .p-swot {
-	font-size: 1.3rem;
+	font-size: 1rem;
 }
 
 .cc-sketches-1 {
@@ -219,7 +216,27 @@
 /* FOODSWITCH CASE STUDY PAGE*/
 
 .fs-jumbo {
-	background-image: url('../images/fs-hero-bg-img.png');
+	background-image: url('../images/fs-hero-img.png');
+}
+
+.fs-hero-p {
+	width: 47%;
+}
+
+.fs-sw-strengths {
+	background-color: #31c4c0;
+}
+
+.fs-sw-weaknesses {
+	background-color: #079393;
+}
+
+.fs-sw-opportunities {
+	background-color: #46d3cc;
+}
+
+.fs-sw-threats {
+	background-color: #057774;
 }
 
 .fs-user-testing-img {
@@ -322,7 +339,7 @@
 		margin-left: 38px;
 	}
 
-	.p-hero {
+	.cs-p-hero {
 		width: 75%;
 		/* margin-left: 80px; */
 	}
@@ -378,7 +395,7 @@
 		font-size: 2rem;
 	}
 
-	.cc-header {
+	.cs-header {
 		margin-top: 84px;
 	}
 
