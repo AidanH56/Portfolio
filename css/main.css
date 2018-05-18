@@ -1,251 +1,265 @@
 /* MAIN PAGE */
 
-/* * { border: 1px solid black; } */
+ /* * { border: 1px solid black; } */
 
 /* Nav Bar*/
 
-.main-nav {
-	background-color: #4c212c;
-	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
-}
+	.main-nav {
+		background-color: #4c212c;
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+	}
 
-.navbar-brand {
+	.navbar-brand {
 
-	margin-right: 0rem;
-}
+		margin-right: 0rem;
+	}
 
-.portfolio-logo {
-	margin-right: 12px;
-}
+	.portfolio-logo {
+		margin-right: 12px;
+	}
 
 /* Hero */
 
-.main-jumbo {
-	background-image: url('../images/hero-img.jpg');
-}
+	.main-jumbo {
+		background-image: url('../images/hero-img.jpg');
+	}
 
-.home-hero {
-	
-}
+	.home-hero {
+		
+	}
 
-.hero-header {
-	margin-top: 80px;
-	margin-bottom: 25px;
-	font-size: 4rem;
-	color: #ffffff;
-}
+	.hero-header {
+		margin-top: 80px;
+		margin-bottom: 25px;
+		font-size: 4rem;
+		color: #ffffff;
+	}
 
-.p-hero {
-	color: #ffffff;
-}
+	.p-hero {
+		color: #ffffff;
+	}
 
-.hero-btn {
+	.hero-btn {
 
-}
+	}
 
 /* Body Content*/
 
 /* Universal Classes and Pairs */
 
 
-.main-jumbo, .cc-jumbo, .fs-jumbo, .about-jumbo {
-	background-repeat: no-repeat;
-	background-size: cover;
-	box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
-}
+	.main-jumbo, .cc-jumbo, .fs-jumbo, .about-jumbo {
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+	}
 
-.cs-swot {
-	margin-top: 35px;
-}
+	.cs-swot {
+		margin-top: 35px;
+	}
 
-.cs-swot-2 {
-	margin-bottom: 35px;
-}
+	.cs-swot-2 {
+		margin-bottom: 35px;
+	}
 
-.cs-sw-strengths, .cs-sw-weaknesses, .cs-sw-opportunities, .cs-sw-threats {
-	padding: 10px;
-	border: 7px solid #616161;
-}
+	.cs-sw-strengths, .cs-sw-weaknesses, .cs-sw-opportunities, .cs-sw-threats {
+		padding: 10px;
+		border: 7px solid #616161;
+	}
 
-.swot-hrs {
-	font-size: 1.7rem;
-}
+	.swot-hrs {
+		font-size: 1.7rem;
+	}
 
-.persona-hr {
-	margin-top: 24px;
-	margin-bottom: 24px;
-}
+	.persona-hr {
+		margin-top: 24px;
+		margin-bottom: 24px;
+	}
 
-.quote {
-	border-left: 4px solid;
-	padding: 0 4%;
-	margin-top: 24px;
-	margin-left: 4%;
-	font-size: 1.1rem;
-	color: #9BA0B3;
-}
+	.quote {
+		border-left: 4px solid;
+		padding: 0 4%;
+		margin-top: 24px;
+		margin-left: 4%;
+		font-size: 1.1rem;
+		color: #9BA0B3;
+	}
 
-.deliverable-links {
-	font-size: 1.2rem;
-}
+	.deliverable-links {
+		font-size: 1.2rem;
+	}
 
-.cs-hero-hr1 {
-	margin-top: 150px;
-}
+	.cs-hero-hr1 {
+		margin-top: 150px;
+		font-size: 3.5rem;
+	}
 
-.cs-hero-hr2 {
-	margin-top: 8px;
-	font-family: "Raleway";
-}
+	.cs-hero-hr2 {
+		margin-top: 8px;
+		font-family: "Raleway";
+	}
 
-.cs-hero-p {
-	width: 65%;
-	margin-top: 24px; 
-	margin-bottom: 15px;
-}
+	.cs-hero-p {
+		width: 65%;
+		margin-top: 24px; 
+		margin-bottom: 15px;
+	}
 
-.cs-hero-hr1, .cs-hero-hr2, .cs-hero-p {
-	color: #ffffff;
-}
+	.cs-hero-hr1, .cs-hero-hr2, .cs-hero-p {
+		color: #ffffff;
+	}
 
-.cs-hr {
-	font-weight: 600;
-}
+	.cs-hr {
+		font-weight: 600;
+	}
 
-.cs-challenge-hr, .cs-task-hr, .cs-roles-hr {
-	font-family: "Raleway";
-}
+	.cs-challenge-hr, .cs-task-hr, .cs-roles-hr {
+		font-family: "Raleway";
+	}
 
 /* ComicCrusade */
 
-.cc-header {
-	color: #c68f62; 
-	margin-top: 255px;
-}
+	.cc-header {
+		color: #c68f62; 
+		margin-top: 255px;
+	}
 
-.cc-img {
-	margin-top: 120px; 
-}
+	.cc-img {
+		margin-top: 120px; 
+	}
 
 /* FoodSwitch */ 
 
-.fs-header {
-	color: #6db1b3; 
-	margin-top: 240px;
-}
+	.fs-header {
+		color: #6db1b3; 
+		margin-top: 240px;
+	}
 
-.fs-img {
-	margin-top: 100px; 
-	margin-bottom: 100px;
-}
-
-
-
+	.fs-img {
+		margin-top: 100px; 
+		margin-bottom: 100px;
+	}
 
 
 /* ABOUT ME PAGE */
-.about-jumbo {
-	background-image: url('../images/about-hero-img.png');
-	background-size: 100%;
-	border-radius: 0;
-}
+	.about-jumbo {
+		background-image: url('../images/about-hero-img.png');
+		background-repeat: no-repeat;
+		padding: 4rem 2rem;
+		margin-bottom: 32px;
+	}
 
-.about-me-hr1 {
-	margin-top: 150px;
-}
+	.about-me-hr1 {
+		margin-top: 190px;
+		font-size: 4.2rem;
+	}
 
-.avatar-img {
-	width: 25%;
-}
+	.avatar-img {
+		margin-top: 16px;
+	}
 
+	.art-img-2 {
+		margin-bottom: 16px;
+	}
 
 /* COMICCRUSADE CASE STUDY PAGE */
 
-/* Hero for CC */
+	.cc-jumbo {
+		background-image: url('../images/cc-hero-img.png');
+		background-size: cover;
+	}
 
-.cc-jumbo {
-	background-image: url('../images/cc-hero-img.png');
-	background-size: cover;
-}
+	.swot-hrs-white, .p-swot-white {
+		color: #dfdee0;
+	}
 
-.swot-hrs-white, .p-swot-white {
-	color: #dfdee0;
-}
+	.cc-sw-strengths {
 
-.cc-sw-strengths {
+		background-color: #f88337;
+	}
 
-	background-color: #f88337;
-}
+	.cc-sw-weaknesses {
+		background-color: #c6622a;
+	}
 
-.cc-sw-weaknesses {
-	background-color: #c6622a;
-}
+	.cc-sw-opportunities {
+		background-color: #f4be84;
+	}
 
-.cc-sw-opportunities {
-	background-color: #f4be84;
-}
+	.cc-sw-threats {
+		background-color: #9b532c;
+	}
 
-.cc-sw-threats {
-	background-color: #9b532c;
-}
+	.p-swot {
+		font-size: 1rem;
+	}
 
-.p-swot {
-	font-size: 1rem;
-}
+	.cc-sketches-1 {
+		margin-top: 58px;
+	}
 
-.cc-sketches-1 {
-	margin-top: 58px;
-}
+	.cc-sketches-2 {
+		margin-top: 36px;
+	}
 
-.cc-sketches-2 {
-	margin-top: 36px;
-}
+	.cc-sketches-3 {
+		margin-top: 76px;
+	}
 
-.cc-sketches-3 {
-	margin-top: 76px;
-}
+	 .cc-user-testing-img {
+		width: 88%;
+	} 
 
- .cc-user-testing-img {
-	width: 88%;
-} 
-
-.cc-prototype-img {
-	width: 55%;
-} 
+	.cc-prototype-img {
+		width: 55%;
+	} 
 
 /* FOODSWITCH CASE STUDY PAGE*/
 
-.fs-jumbo {
-	background-image: url('../images/fs-hero-img.png');
-}
+	.fs-jumbo {
+		background-image: url('../images/fs-hero-bg-img.png');
+		padding: 4rem 2rem;
+		margin-bottom: 32px;
+	}
 
-.fs-hero-p {
-	width: 47%;
-}
+	.fs-hero {
+		width: 45%;
+	}
 
-.fs-sw-strengths {
-	background-color: #31c4c0;
-}
+	.fs-hero-p {
+		margin-top: 24px;
+		margin-bottom: 15px;
+		color: #ffffff;
+	}
 
-.fs-sw-weaknesses {
-	background-color: #079393;
-}
+	.fs-hero-img {
+		margin-top: 160px;
+		display: block;
+	}
 
-.fs-sw-opportunities {
-	background-color: #46d3cc;
-}
+	.fs-sw-strengths {
+		background-color: #31c4c0;
+	}
 
-.fs-sw-threats {
-	background-color: #057774;
-}
+	.fs-sw-weaknesses {
+		background-color: #079393;
+	}
 
-.fs-user-testing-img {
-	width: 150%;
-}
+	.fs-sw-opportunities {
+		background-color: #46d3cc;
+	}
 
-.fs-prototype-img {
-	width: 150%;
-}
+	.fs-sw-threats {
+		background-color: #057774;
+	}
+
+	.fs-user-testing-img {
+		width: 150%;
+	}
+
+	.fs-prototype-img {
+		width: 150%;
+	}
 
 
 /* Media Queries */
@@ -284,6 +298,12 @@
 		display: none;
 	}
 
+	/* ABOUT ME PAGE */
+
+		.about-me-hr1 {
+			margin-top: 100px;
+		}
+
 	/* COMICRUSADE PAGE */
 
 	.cc-carl-persona-img {
@@ -308,6 +328,15 @@
 
 	.cc-user-testing-img {
 		width: 100%;
+	}
+
+	/*FoodSwitch Page*/
+	.cs-hero-hr1 {
+		font-size: 3rem;
+	}
+
+	.fs-hero-img {
+		margin-top: 0;
 	}
 
 	/*Footer*/
@@ -339,6 +368,10 @@
 		margin-left: 38px;
 	}
 
+	.cs-hero-hr1 {
+		font-size: 3.2rem;
+	}
+
 	.cs-p-hero {
 		width: 75%;
 		/* margin-left: 80px; */
@@ -348,64 +381,76 @@
 		display: inherit;
 	}
 
-/* COMICCRUSADE PAGE */
+	/* ABOUT ME PAGE */
 
-	.cc-jumbo {
+		.about-me-hr1 {
+			margin-top: 190px;
+		}
 
-		background-image: url('../images/cc-hero-tablet-img.png');
-	}
+	/* COMICCRUSADE PAGE */
 
-	.cc-user-research-img-g1 {
-		margin-top: 20px;
-	}
+		.cc-jumbo {
 
-	.cc-user-research-img-g2 {
-		margin-top: 20px;
-	}
+			background-image: url('../images/cc-hero-tablet-img.png');
+		}
 
-	.cc-p-urpoint-1 {
-		margin-top: 12px;
-	}
+		.cc-user-research-img-g1 {
+			margin-top: 20px;
+		}
 
-	.cc-carl-persona-img {
-		display: initial;
-	}
+		.cc-user-research-img-g2 {
+			margin-top: 20px;
+		}
 
-	.cc-mobile-persona {
-		display: none;
-	}
+		.cc-p-urpoint-1 {
+			margin-top: 12px;
+		}
 
-	.cc-sketches-1 {
-		margin-top: 58px;
-	}
+		.cc-carl-persona-img {
+			display: initial;
+		}
 
-	.cc-sketches-2 {
-		margin-top: 36px;
-	}
+		.cc-mobile-persona {
+			display: none;
+		}
 
-	.cc-sketches-3 {
-		margin-top: 76px;
-	}
+		.cc-sketches-1 {
+			margin-top: 58px;
+		}
 
-	 .cc-user-testing-img {
-		width: 88%;
-	} 
+		.cc-sketches-2 {
+			margin-top: 36px;
+		}
 
-	.cc-header, .fs-header {
-		font-size: 2rem;
-	}
+		.cc-sketches-3 {
+			margin-top: 76px;
+		}
 
-	.cs-header {
-		margin-top: 84px;
-	}
+		 .cc-user-testing-img {
+			width: 88%;
+		} 
 
-	.fs-header{
-		margin-top: 95px;
-	}
+		.cc-header, .fs-header {
+			font-size: 2rem;
+		}
 
-	.fs-img {
-		margin-top: 40px;
-	}
+		.cs-header {
+			margin-top: 84px;
+		}
+
+	/* FOODSWITCH PAGE */
+
+		.fs-header{
+			margin-top: 95px;
+		}
+
+		.fs-img {
+			margin-top: 40px;
+		}
+
+		.fs-hero-img {
+			margin-top: 170px;
+		}
 
 }
 
@@ -413,6 +458,10 @@
 
 	.hero-header {
 		font-size: 4.5rem;
+	}
+
+	.cs-hero-hr1 {
+		font-size: 4.2rem;
 	}
 
 	.p-hero {
@@ -450,6 +499,14 @@
 
 	.cc-hero-p {
 	width: 50%;
+    }
+
+    .fs-hero-p {
+    	width: 85%;
+    }
+
+    .fs-hero-img {
+    	margin-top: 130px;
     }
 
 	.email {
