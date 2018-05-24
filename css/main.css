@@ -47,6 +47,9 @@
 
 /* Universal Classes and Pairs */
 
+	.custom-offset {
+		margin-left: 25%;
+	}
 
 	.main-jumbo, .cc-jumbo, .fs-jumbo, .about-jumbo {
 		background-repeat: no-repeat;
@@ -154,6 +157,20 @@
 		font-size: 4.2rem;
 	}
 
+	.about-hr {
+		font-weight: 600;
+		margin-top: 60px;
+	}
+
+	.about-skills-hr {
+		font-weight: 600;
+	}
+
+	.about-p {
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+
 	.avatar-img {
 		margin-top: 16px;
 	}
@@ -218,6 +235,7 @@
 
 	.fs-jumbo {
 		background-image: url('../images/fs-hero-bg-img.png');
+		background-repeat: no-repeat;
 		padding: 4rem 2rem;
 		margin-bottom: 32px;
 	}
