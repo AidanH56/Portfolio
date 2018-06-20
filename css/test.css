@@ -148,14 +148,10 @@
 		margin-left: 16px;
 		margin-top: 11px;
 		font-size: 24px;
-		
-		float: right;
-	}
-
-	.logo-hr-link {
 		color: #ffffff;
 		text-decoration: none;
 		text-align: center;
+		float: right;
 	}
 
 	.portfolio-logo {
@@ -258,6 +254,35 @@
 		grid-column: 2;
 		text-align: center;
 		margin-bottom: 32px;
+	}
+
+/* CASE STUDY UNIVERSAL CLASSES */
+	.cs-hero {
+		display: grid;
+		grid-template-columns: 150px auto 150px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		justify-content: center;
+		text-align: center;
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+	}
+
+	.cs-hero-container {
+		grid-row: 1;
+		grid-column: 2/3;
+		margin-top: 100px;
+		padding: 50px 0 50px 0;
+	}
+
+	.cs-hero-hr {
+		margin-top: 60px;
+		font-size: 60px;
+	}
+
+/* COMICCRUSADE PAGE */
+	.cc-hero {
+		background-image: url('../images/cc-hero-bg-img.png');
 	}
 
 
