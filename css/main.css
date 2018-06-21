@@ -148,14 +148,14 @@
 		margin-left: 16px;
 		margin-top: 11px;
 		font-size: 24px;
-		
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
 		float: right;
 	}
 
 	.logo-hr-link {
-		color: #ffffff;
-		text-decoration: none;
-		text-align: center;
+		
 	}
 
 	.portfolio-logo {

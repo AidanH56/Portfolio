@@ -11,6 +11,10 @@
 		text-align: left;
 	}
 
+	h1, h2, h3 {
+		line-height: 1.3;
+	}
+
 	h1 {
 		font-size: 51.2px;
 		font-weight: 900;
@@ -85,8 +89,8 @@
 	}
 
 	.bar1, .bar2, .bar3 {
-	    width: 35px;
-	    height: 5px;
+	    width: 30px;
+	    height: 3px;
 	    background-color: #ffffff;
 	    margin: 6px 0;
 	    transition: 0.4s;
@@ -133,8 +137,8 @@
 		 
 		.sidenav .closebtn {
 		    position: absolute;
-		    top: 0;
-		    right: 40px;
+		    top: -8px;
+		    right: 33px;
 		    font-size: 64px;
 		}
 
@@ -183,20 +187,22 @@
 		color: #333333;
 	}
 
-	.img-fluid {
-		display: block;
-		width: 90%;
-		height: auto;
-	}
-
 /* GRID */
+
+	.main-content {
+		display: grid;
+		grid-template-columns: 300px auto 300px;
+		grid-template-rows: auto;
+		grid-template-areas: "... content ...";
+		grid-gap: 16px;
+	}
 
 /* ABOUT ME PAGE */
 
 	.about-hero {
 		display: grid;
 		grid-template-columns: 150px auto 150px;
-		background-image: url('../images/about-hero-img.png');
+		background-image: url('../images/about-hero-img2.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -221,19 +227,20 @@
 		margin-top: 32px;
 	}
 
-	.about-content {
-		display: grid;
-		grid-template-columns: 300px auto 300px;
-		grid-gap: 16px;
+	.main, .skills-tools, .connect, .test-img, .about-me {
+		grid-area: content;
 	}
 
-	.main, .skills-tools, .connect {
-		grid-row: 1;
-		grid-column: 2/3;
+	.test-img {
+		margin-top: 5.5em;
+	}
+
+	.main {
+		grid-row: 2;
 	}
 
 	.skills-tools {
-		grid-row: 2;
+		grid-row: 3;
 	}
 
 	.skills {
@@ -280,20 +287,54 @@
 		font-size: 60px;
 	}
 
+	.img-fluid {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.research-img {
+		width: 20%;
+	}
+
+	.user-research, .personas {
+		grid-area: content;
+	}
+
+	.user-research {
+		grid-row: 2;
+	}
+
+	.personas {
+		grid-row: 3;
+	}
+
+	.cs-mobile-persona {
+		display: none;
+	}
+
 /* COMICCRUSADE PAGE */
 	.cc-hero {
 		background-image: url('../images/cc-hero-bg-img.png');
 	}
 
+	.cs-trio-1 {
+		grid-area: content;
+	}
+
+/*	.cc-research-img {
+		float: left;
+	}
+
+	.cc-ur-p {
+		float: right;
+	}
+*/
 
 /* MEDIA QUERIES */
 	@media screen and (min-width: 320px) {
-		.about-content, .connect {
+		.main-content, .connect {
 			grid-template-columns: 20px auto 20px;
-		}
-
-		h1 {
-			font-size: 45.2px;
 		}
 
 		.skills, .tools {
@@ -301,14 +342,28 @@
 		}
 	}
 
-	@media screen and (max-width: 320px) {
+	@media screen and (max-width: 425px) {
 		.logo-hr {
 			display: none;
+		}
+
+		h1 {
+			font-size: 32px;
+			line-height: 55px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		figcaption {
+			font-size: 18px;
+			margin-bottom: 10px;
 		}
 	}
 
 	@media screen and (min-width: 535px) {
-		.about-content, .connect {
+		.main-content, .connect {
 			grid-template-columns: 50px auto 50px;
 		}
 	}
@@ -320,7 +375,7 @@
 	}
 
 	@media screen and (min-width: 600px) {
-		.about-content, .connect {
+		.main-content, .connect {
 			grid-template-columns: 100px auto 100px;
 		}
 	}
@@ -353,7 +408,7 @@
 	}
 
 	@media screen and (min-width: 768px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 100px auto 80px;
 		}
 
@@ -373,20 +428,20 @@
 	}
 
 	@media screen and (min-width: 826px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 120px auto 120px;
 		}
 	}
 
 	@media screen and (min-width: 897px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 150px auto 150px;
 		}
 	}
 
 
 	@media screen and (min-width: 958px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 180px auto 180px;
 		}
 
@@ -408,7 +463,7 @@
 	}
 
 	@media screen and (min-width: 1145px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 290px auto 290px;
 		}
 	}
@@ -420,7 +475,7 @@
 	}
 
 	@media screen and (min-width: 1242px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 330px auto 330px;
 		}
 	}
