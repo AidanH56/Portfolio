@@ -1,4 +1,4 @@
-/* * { border: 1px solid black; } */
+/* * { border: 0.5px solid black; } */
 
 /* HTML */	
 
@@ -11,25 +11,26 @@
 		text-align: left;
 	}
 
+	h1, h2, h3 {
+		line-height: 1.3;
+	}
+
 	h1 {
 		font-size: 51.2px;
 		font-weight: 900;
 		color: #212529;
-		margin: 0;	
 	}
 
 	h2 {
 		font-size: 40px;
 		font-weight: 900;
 		color: #212529;
-		margin: 0;	
 	}
 
 	h3 {
 		font-size: 24px;
 		font-weight: 900;
-		color: #212529;
-		margin: 0;	
+		color: #212529;	
 	}
 
 	p {
@@ -85,8 +86,8 @@
 	}
 
 	.bar1, .bar2, .bar3 {
-	    width: 35px;
-	    height: 5px;
+	    width: 30px;
+	    height: 3px;
 	    background-color: #ffffff;
 	    margin: 6px 0;
 	    transition: 0.4s;
@@ -133,8 +134,8 @@
 		 
 		.sidenav .closebtn {
 		    position: absolute;
-		    top: 0;
-		    right: 40px;
+		    top: -8px;
+		    right: 33px;
 		    font-size: 64px;
 		}
 
@@ -146,16 +147,12 @@
 
 	.logo-hr {
 		margin-left: 16px;
-		margin-top: 11px;
+		margin-top: 16px;
 		font-size: 24px;
 		color: #ffffff;
 		text-decoration: none;
 		text-align: center;
 		float: right;
-	}
-
-	.logo-hr-link {
-		
 	}
 
 	.portfolio-logo {
@@ -187,20 +184,29 @@
 		color: #333333;
 	}
 
-	.img-fluid {
-		display: block;
-		width: 90%;
-		height: auto;
+/* GRID */
+
+	.main-content {
+		display: grid;
+		grid-template-columns: 300px auto 300px;
+		grid-template-rows: auto;
+		grid-template-areas: "... content ...";
+		grid-gap: 16px;
 	}
 
-/* GRID */
+	.main-grid {
+		display: grid;
+		grid-template-columns: repeat(10, 12.5%);
+		grid-template-rows: auto;
+		grid-row-gap: 16px;
+	}
 
 /* ABOUT ME PAGE */
 
 	.about-hero {
 		display: grid;
 		grid-template-columns: 150px auto 150px;
-		background-image: url('../images/about-hero-img.png');
+		background-image: url('../images/about-hero-img2.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -225,19 +231,20 @@
 		margin-top: 32px;
 	}
 
-	.about-content {
-		display: grid;
-		grid-template-columns: 300px auto 300px;
-		grid-gap: 16px;
+	.main, .skills-tools, .connect, .test-img, .about-me {
+		grid-area: content;
 	}
 
-	.main, .skills-tools, .connect {
-		grid-row: 1;
-		grid-column: 2/3;
+	.test-img {
+		margin-top: 5.5em;
+	}
+
+	.main {
+		grid-row: 2;
 	}
 
 	.skills-tools {
-		grid-row: 2;
+		grid-row: 3;
 	}
 
 	.skills {
@@ -260,43 +267,278 @@
 		margin-bottom: 32px;
 	}
 
+/* CASE STUDY UNIVERSAL CLASSES */
+	.cs-hero {
+		display: grid;
+		grid-template-columns: 150px auto 260px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		justify-content: left;
+		text-align: left;
+		padding-bottom: 50px; /* Compensating for img top margin */
+		box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+	}
+
+	.cs-hero-container {
+		
+	}
+
+	.cs-hero-hr, .cs-hero-p {
+		color: #333333;
+	}
+
+	.button {
+	    border: 2px solid #333333;
+	    color: #333333;
+	    padding: 12px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	    transition-duration: 0.4s;
+	}
+
+	.button:hover {
+	    background-color: #ffffff;
+	    color: #333333;
+	}
+
+	.img-fluid {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.intro-container span {
+		font-weight: 700;
+		font-size: 24px;
+	}
+
+	.persona-1, .persona-2 {
+		display: inline-block;
+	}
+
+	.persona-1 {
+		
+	}
+
+	.persona-2 {
+		margin-left: 26px;
+
+	}
+
+	.cs-mobile-persona {
+		display: none;
+	}
+
+/* COMICCRUSADE PAGE */
+	.cc-hero {
+		background-image: url('../images/cc-hero-bg-img.png');
+	}
+
+	.cc-hero-img {
+		grid-column-start: 7;
+		margin-top: 120px;
+		margin-bottom: 32px;
+		height: auto;
+		display: block;
+		width: 93%;
+	}
+
+	.cc-mobile-hero {
+		display: none;
+	}
+
+	.intro, .cc-prototype-img {
+		grid-column-start: 3;
+	}
+
+	.test-img1, .test-img2, .test-img3, .test-img4, .test-img5 {
+		
+	}
+
+	.cs-hero-container, .stories, .flows, .cc-sketches, .test-img1, .test-img5 {
+		grid-column-start: 1;
+	}
+
+	.cs-hero-container {
+		margin-left: 4%;
+		margin-top: 170px;
+		margin-bottom: 32px;
+	}
+
+	.user-research, .research-conclusion, .personas, .analysis-intro, 
+		.cs-swot, .swot-p, .user-stories, .user-flows, .wireframes, 
+		.testing-intro, .challenge, .prototype, .conclusion {
+		grid-column-start: 2;
+		margin-left: 11%;
+		margin-right: 9%;
+	}
+
+	.ur-point-1, .ur-point-3, .persona-1, .persona-left {
+		grid-column-start: 2; 
+	}
+
+	.cc-wireframe-img1, .test-img2 {
+		grid-column-start: 4;
+		grid-column-end: 6;
+	}
+
+	.cc-wireframe-img2, .test-img3{
+		grid-column-start: 7;
+		grid-column-end: 9;
+	}
+
+	.ur-point-2, .ur-point-4, .persona-right, .persona-2 {
+		grid-column-start: 5;
+	}
+
+	.cc-hero-img, .persona-right, .cc-sketches, .test-img1 {
+		grid-column-end: span 2;
+	}
+
+	.ur-point-1, .ur-point-2, .ur-point-3, .ur-point-4, .persona-left, 
+		.persona-right, .persona-1, .persona-2 {
+		grid-column-end: span 3;
+	}
+
+	.intro, .cc-prototype-img, .cs-hero-container {
+		grid-column-end: span 4;
+	}
+
+	.user-research, .research-conclusion, .personas,
+	 .analysis-intro, .cs-swot, .swot-p, .user-stories, .user-flows, 
+	 .wireframes, .testing-intro, .challenge,.prototype, .conclusion {
+		grid-column-end: span 6;
+	}
+
+	.stories, .flows {
+		grid-column-end: span 8;
+	}
+
+	.ur-point-3, .ur-point-4 {
+		margin-bottom: 32px;
+	}
+
+	.persona-left {
+		/*float: left;*/
+		margin-right: 48px;
+	}
+
+	.persona-right {
+		/*float: right;*/
+		margin-left: 24px;
+	}
+
+	.intro-container {
+		margin-top: 16px;
+	} 
+
+	.cs-swot {
+		/*margin-top: 35px;*/
+		display: grid;
+		max-width: 1000px;
+	    margin: auto; 
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-gap: 10px;
+		background-color: #616161;
+		border: 10px solid #616161;
+	}
+
+	.cs-sw-strengths, .cs-sw-weaknesses, .cs-sw-opportunities, .cs-sw-threats {
+		padding: 10px;
+	}
+
+	.swot-hrs {
+		font-size: 1.7rem;
+	}
+
+	.swot-hrs-white, .p-swot-white {
+		color: #dfdee0;
+	}
+
+	.cc-sw-strengths {
+		background-color: #f88337;
+	}
+
+	.cc-sw-weaknesses {
+		background-color: #c6622a;
+	}
+
+	.cc-sw-opportunities {
+		background-color: #f4be84;
+	}
+
+	.cc-sw-threats {
+		background-color: #9b532c;
+	}
 
 /* MEDIA QUERIES */
-	@media screen and (min-width: 320px) {
-		.about-content, .connect {
-			grid-template-columns: 20px auto 20px;
-		}
-
-		h1 {
-			font-size: 45.2px;
-		}
-
-		.skills, .tools {
-			float: none;
-		}
-	}
 
 	@media screen and (max-width: 320px) {
-		.logo-hr {
-			display: none;
+
+		.cs-hero {
+			width: 114%;
 		}
 	}
 
-	@media screen and (min-width: 535px) {
-		.about-content, .connect {
-			grid-template-columns: 50px auto 50px;
+	@media screen and (max-width: 425px) {
+		h1 {
+			font-size: 32px;
+			line-height: 55px;
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+
+		h3 {
+			font-size: 22px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		figcaption {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		.cs-hero-container {
+			text-align: center;
+			margin-left: 9%;
+		}
+
+		.logo-hr, .cc-hero-img, .flows {
+			display: none;
+		}
+
+		.cc-mobile-hero {
+			display: block;
+		}
+
+		.cc-mobile-hero {
+			grid-column-start: 3;
+			grid-column-end: span 7;
+			width: 50%;
+		}
+
+		.cs-hero-container {
+			grid-column-end: span 7;
+		}
+
+		.cc-sketches, .cc-wireframe-img1, .cc-wireframe-img2 {
+			display: none;
 		}
 	}
 
 	@media screen and (max-width: 556px) {
 		.about-hero-hr {
 			margin-top: 0;
-		}
-	}
-
-	@media screen and (min-width: 600px) {
-		.about-content, .connect {
-			grid-template-columns: 100px auto 100px;
 		}
 	}
 
@@ -327,8 +569,89 @@
 
 	}
 
+	@media screen and (max-width: 668px) {
+		.cs-swot {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+		}
+	}
+
+	@media screen and (max-width: 725px) {
+		.persona-2 {
+			display: none;
+		}
+
+		.cs-mobile-persona {
+			display: inline-block;
+		}
+
+		.persona-1, .persona-left, .persona-right {
+			float: none;
+		}
+
+		.user-research, .research-conclusion, .personas, .persona-1,
+		 .persona-left, .persona-right, .analysis-intro, .cs-swot, .swot-p, 
+		 .user-stories, .user-flows, .wireframes, .testing-intro, .challenge,
+		 .prototype, .conclusion, .intro {
+			grid-column-start: 1;
+			margin-left: 4%;
+		}
+
+		.intro, .user-research, .research-conclusion, .personas, .persona-left, 
+		.persona-right, .analysis-intro, .cs-swot, .swot-p, .user-stories, 
+		.user-flows, .wireframes, .testing-intro, .challenge, .prototype, .conclusion {
+			grid-column-end: span 8;
+			margin-right: 5%;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		h1 {
+			font-size: 40px;
+		}
+
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+	}
+
+	@media screen and (max-width: 868px) {
+		/* COMICCRUSADE PAGE */
+		.cc-hero-img {
+			grid-column-start: 6;
+			grid-column-end: span 3;
+			width: 83%;
+		}
+	}
+
+	@media screen and (min-width: 320px) {
+		.main-content, .connect {
+			grid-template-columns: 20px auto 20px;
+		}
+
+		.skills, .tools {
+			float: none;
+		}
+	}
+
+	@media screen and (min-width: 535px) {
+		.main-content, .connect {
+			grid-template-columns: 50px auto 50px;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+		.main-content, .connect {
+			grid-template-columns: 100px auto 100px;
+		}
+	}
+
 	@media screen and (min-width: 768px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 100px auto 80px;
 		}
 
@@ -348,20 +671,20 @@
 	}
 
 	@media screen and (min-width: 826px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 120px auto 120px;
 		}
 	}
 
 	@media screen and (min-width: 897px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 150px auto 150px;
 		}
 	}
 
 
 	@media screen and (min-width: 958px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 180px auto 180px;
 		}
 
@@ -383,7 +706,7 @@
 	}
 
 	@media screen and (min-width: 1145px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 290px auto 290px;
 		}
 	}
@@ -395,7 +718,7 @@
 	}
 
 	@media screen and (min-width: 1242px) {
-		.about-content {
+		.main-content {
 			grid-template-columns: 330px auto 330px;
 		}
 	}

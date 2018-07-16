@@ -12,250 +12,266 @@
 
 	<title>ComicCrusade</title>
 
-	<!-- Bootstrap -->
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i" rel="stylesheet">
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
-
+	
 </head>
 
 
 <body>
 
-<!-- Nav Bar-->
 
-	<nav class="navbar navbar-expand-md navbar-dark main-nav fixed-top">
-		  <a class="navbar-brand" href="index.html"><img src="images/logo-img.png" class="portfolio-logo img-fluid"/>Aidan D. Herlong</a>
+	<!-- Nav Bar -->
+	<header>
 
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collpase_target">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-	
-
-		  <div class="collapse navbar-collapse" id="collpase_target">
-		    <ul class="nav navbar-nav navbar-right ml-auto mr-3">
-		      <li class="nav-item">
-		        <a class="nav-link" href="index.html#case-studies">Case Studies</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#contact-footer">Contact</a>
-		      </li>
-		    </ul>
-		  </div>
-	</nav>
-
-<!-- Hero -->
-
-    <div class="container-fluid cc-jumbo animated fadeIn">
-        <div class="row">
-            <div class="col-md-6 cc-hero-1">
-              <h1 class="display-6 cs-hero-hr1 animated fadeIn">ComicCrusade</h1>
-              <h4 class="cs-hero-hr2 animated fadeIn">6 weeks | Android OS App</h4>
-                 <p class="lead cs-hero-p animated fadeIn">Android app dedicated to finding the comics you’re looking for in nearby stores.</p>
-                 <p class="lead">
-                    <a class="btn btn-outline-light btn-lg hero-btn mt-4 animated fadeIn" href="https://invis.io/HEE9VK1F9" role="button">VIEW PROTOTYPE</a>
-                </p>
-            </div>
-            <div class="col-md-4 cc-hero-2">
-                <img src="images/cc-hero.png" class="cc-hero-img">
-            </div>
-		</div>
-	</div>
-
-
-<!-- Grid System -->
-
-<!-- Main Objectives -->
-	<div class="container">
-		
-		<div class="row">
+		<div class="logo-container"> <!-- Centers logo and header -->
 			
-			<div class="col-lg-12">
+			<a class="logo" href="index.html"><img src="images/logo-img.png" class="portfolio-logo"/></a>
 
-				<div class="cs-trio-1 custom-offset">
-                    
-                    <p class="test">
-                        <span>Meta-Challenge</span> learn the essentials of Material and mobile design.
-                    </p>
-                    
-                    <p class="test">
-                        <span>Underlying Task</span> design comic store app prototype for Android.
-                    </p>
+			<h1 class="logo-hr">Aidan D. Herlong</h1>
+		</div>
 
-                    <p class="test">
-                        <span>My Roles</span> digital product research and screen design.
-                    </p>
+		<nav>
 
-					<h4 class="cs-trio-hr">Meta-Challenge</h4>
+			<ul class="nav-links">
 
-					<p class="cs-objectives-p">learn the essentials of Material and mobile design.</p>
+				<li><a class="nav-link" href="index.html#case-studies">Case Studies</a></li>
 
-					<h4 class="cs-trio-hr">Underlying Task</h4>
+			    <li><a class="nav-link" href="#contact-footer">Contact</a></li>
+		
+			</ul>
 
-					<p class="cs-objectives-p">design comic store app prototype for Android.</p>
+		</nav>
 
-					<h4 class="cs-trio-hr">My Roles</h4>
+		<div id="sideNavigation" class="sidenav" aria-hidden="true">
+		 
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="navigation button">&times;</a>
 
-					<p class="cs-objectives-p">digital product research and screen design.</p>
+		 	<div class="links">
 
-				</div>
+			  	<li class="side-link-1"><a class="nav-link" href="index.html#case-studies">Case Studies</a></li>
+
+			    <li class="side-link-2"><a class="nav-link" href="#contact-footer">Contact</a></li>
+
+		  	</div>
+
+		</div>
+
+		<div class="menu-toggle" onclick="openNav()" aria-label="navigation button">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+		    <div class="bar3"></div>
+		</div>
+
+	</header>
+
+	<!-- Hero -->
+
+	<section id="hero" class=" cc-hero main-grid">
+
+		<!-- Holds hero content text"-->
+		<div class="cs-hero-container">
+
+			<h1 class="cs-hero-hr cc-hero-hr animated fadeIn">ComicCrusade</h1>
+
+			<h3 class="cs-hero-hr animated fadeIn">6 weeks | Android OS App</h3>
+                
+                 <p class="cs-hero-p animated fadeIn">Android app dedicated to finding the comics you’re looking for in nearby stores.</p>
+             
+                  <a class="button animated fadeIn" href="https://invis.io/HEE9VK1F9" role="button">VIEW PROTOTYPE</a>
+                
+
+		</div>
+
+		<!-- Holds image for hero -->
+			
+			<img src="images/cc-hero.png" class="cc-hero-img">
+			
+			<img src="images/cc-hero.png" class="cc-mobile-hero">
+
+	</section>
+
+	<!-- Main Content-->
+
+	<section id="introduction" class="main-grid">
+
+		<div class="intro">
+
+			<div class="intro-container">
+				
+				<p class="meta-challenge"><span>Meta-Challenge:</span> learn the essentials of Material and mobile design.</p>
+
+				<p class="task"><span>Underlying Task:</span> learn the essentials of Material and mobile design.</p>
+
+				<p class="roles"><span>My Roles:</span> learn the essentials of Material and mobile design.</p>
 
 			</div>
-			
+		</div>
 
-<!-- User Research -->
-			
-			<div class="col-md-7 custom-offset">
+	</section>
+
+	<!-- User Research -->
+
+	<section id="user-research" class="main-grid">
+
+		<div class="user-research">
 				
-				<h1 class="cs-hr mt-5 mb-3">User Research</h1>
+				<h1 class="cs-hr">User Research</h1>
 			
 				
 				<p>I sent a mass online survey to a subReddit forum; slack channels; and social media to better understand my target audience. From the research gathered, here's what was discovered: </p>
+		</div>
 			
-				<div class="store">
+			<!-- Figure out a way to stack the icons and text side-by-side 
+			 using CSS-->
+		<div class="ur-point-1">
 
-					<img src="images/store-visual-img.png" class="cc-user-research-img-g1 img-fluid">
-
-					
-					<p class="cc-p-urpoint-1"><strong>55%</strong> still go to comic book stores to purchase physical comics and merchandise.</p>
-
-				</div>
-
-				<div class="smapho">
-
-					<img src="images/smapho-visual-img.png" class="cc-user-research-img-g1 img-fluid">
+			<img src="images/store-visual-img.png" class="cc-research-img research-img">
 
 					
-					<p class="cc-p-urpoint-2"><strong>52%</strong> would consider using an app to help them find the comcis they are looking for.</p>
+			<p class="cc-ur-p"><strong>55%</strong> still go to comic book stores to purchase physical comics and merchandise.</p>
 
-				</div>
-			
-				<div class="comic my-2">
+		</div>
+
+		<div class="ur-point-2">
+
+			<img src="images/smapho-visual-img.png" class="cc-research-img research-img">
+
 					
-					<img src="images/comic-visual-img.png" class="cc-user-research-img-g2 img-fluid">
-					
-					<p class="cc-p-urpoint-3"><strong>56.3%</strong> want to continue experiencing the pleasure of owning a physical comic over a digital one.</p>
-
-				</div>
-
-				<div class="person my-2">
-					
-					<img src="images/person-visual-img.png" class="cc-user-research-img-g2 img-fluid">
-					
-					<p class="cc-p-urpoint-4"><strong>43.7%</strong> want to engage in face-to-face interactions with the staff and other customers at the stores.</p>
-
-				</div>
-			
-				
-				<p>In addition to the mass survey sent, an in-person interview was conducted to better understand one of my later identified personas: the rusher. Valuable features were noted during the interview. Some examples include finding comics a store had in stock without the hassle of asking in person and the value of reading comics in person versus on an app.</p>
-			
-
-
-<!-- Personas -->
-				
-		<h1 class="cs-hr">Personas</h1>
-				
-				<p>Personas were crafted based off of the results of the research conducted in this project. Both the survey results and the 1-on-1 interview I performed helped me identify my target groups:</p>
-			
+			<p class="cc-ur-p"><strong>52%</strong> would consider using an app to help them find the comcis they are looking for.</p>
 
 		</div>
 			
-			<div class="col-md-4 offset-md-2 my-4">
-				
-				<img src="images/cc-alice-img.png" class="cc-personas-img img-fluid">
+		<div class="ur-point-3">
+					
+			<img src="images/comic-visual-img.png" class="cc-research-img research-img">
+					
+			<p class="cc-ur-p"><strong>56.3%</strong> want to continue experiencing the pleasure of owning a physical comic over a digital one.</p>
 
-			</div>
+		</div>
 
-			<div class="col-md-4 my-4 cc-carl-persona-img">
-				
-				<img src="images/cc-carl-img.png" class="cc-personas-img img-fluid">
+		<div class="ur-point-4">
+					
+			<img src="images/person-visual-img.png" class="cc-research-img research-img">
+					
+			<p class="cc-ur-p"><strong>43.7%</strong> want to engage in face-to-face interactions with the staff and other customers at the stores.</p>
 
-			</div>
+		</div>
+			
+		<div class="research-conclusion">
 
-		<div class="w-100"></div>
+			<p>In addition to the mass survey sent, an in-person interview was conducted to better understand one of my later identified personas: the rusher. Valuable features were noted during the interview. Some examples include finding comics a store had in stock without the hassle of asking in person and the value of reading comics in person versus on an app.</p>
 
-			<div class="col-md-4 offset-md-2 my-4">
-				
-				<h1 class="test">Alice</h1>
+		</div>
+	</section>
 
-				<p class="persona-bio persona-hr lead">23 Year-Old Designer</p>
+	<!-- Personas -->
 
-				<h2 class="persona-hr">MOTIVATIONS</h2>
-				<p>Alice casually reads comics when she has free time from work. She normally buys comics at a store but has been buying them and other books online due to cheaper prices and always having them in stock. If the comic store near her workplace had what she wanted at a decent price, she would buy her physical copies there.</p>
+	<section id="personas" class="main-grid">
 
-				<p class="quote"><em>“I typically buy comics and other books online since buying them at a store can be costly and they sometimes don’t have what I’m looking for.”</em></p>
+		<div class="personas">		
 
-				<h2 class="persona-hr">GOALS</h2>
- 				<ul>
- 					<li>Buy comics at physical store if in stock and cheaper.</li>
- 					<li>Partake in comic-related events when possible.</li>
- 					<li>Connect with other people at comic store and at 
- 					comic-related events when possible.</li>
- 				</ul>
+			<h1>Personas</h1>
+					
+			<p>Personas were crafted based off of the results of the research conducted in this project. Both the survey results and the 1-on-1 interview I performed helped me identify my target groups:</p>
+
+		</div>
+					
+			<img src="images/cc-alice-img.png" class="persona-1 cc-personas-img">
+
+			<img src="images/cc-carl-img.png" class="persona-2 cc-personas-img">
+
+
+		<!--		<div class="col-md-4 my-4 cc-carl-persona-img">
+					
+					<img src="images/cc-carl-img.png" class="cc-personas-img">
+
+				</div>
+		-->
+
+		<div class="persona-left">
+					
+			<h1 class="test">Alice</h1>
+
+			<p class="persona-bio persona-hr lead">23 Year-Old Designer</p>
+
+			<h2 class="persona-hr">MOTIVATIONS</h2>
+			<p>Alice casually reads comics when she has free time from work. She normally buys comics at a store but has been buying them and other books online due to cheaper prices and always having them in stock. If the comic store near her workplace had what she wanted at a decent price, she would buy her physical copies there.</p>
+
+			<p class="quote"><em>“I typically buy comics and other books online since buying them at a store can be costly and they sometimes don’t have what I’m looking for.”</em></p>
+
+			<h2 class="persona-hr">GOALS</h2>
+	 			<ul>
+	 				<li>Buy comics at physical store if in stock and cheaper.</li>
+	 				<li>Partake in comic-related events when possible.</li>
+	 				<li>Connect with other people at comic store and at 
+	 					comic-related events when possible.</li>
+	 			</ul>
 
 				<h2 class="persona-hr">FRUSTRATIONS</h2>
 				<ul>
- 					<li>Stores don’t have what he wants in stock when visiting
- 					sometimes.</li>
- 					<li>Price of buying physical comics is higher than buying
+	 				<li>Stores don’t have what he wants in stock when visiting
+	 				sometimes.</li>
+	 				<li>Price of buying physical comics is higher than buying
 					 and reading it online.</li>
- 					<li>Would like an app that can help him find the comics 
- 					she wants when his favorite store is out.</li>
- 				</ul>
+	 				<li>Would like an app that can help him find the comics 
+	 				she wants when his favorite store is out.</li>
+	 			</ul>
 
-			</div>
+		</div>
 
-			<div class="col-md-4 my-4">
+		<div class="persona-right">
 
-				<img src="images/cc-carl-img.png" class="cc-mobile-persona img-fluid">
-				
-				<h1 class="test">Zachary</h1>
+			<img src="images/cc-carl-img.png" class="cs-mobile-persona">
+					
+			<h1 class="test">Zachary</h1>
 
-				<p class="persona-bio persona-hr lead">22 Year-Old Student</p>
+			<p class="persona-bio persona-hr lead">22 Year-Old Student</p>
 
-				<h2 class="persona-hr">MOTIVATIONS</h2>
-				<p>Zachary enjoys going to his favorite comic book store just a few miles away from his school. He visits there weekly to see what’s hot on the shelves along with interacting with the staff he knows well. Despite the positive nature of the store, he gets frustrated when the new comics he wants aren’t in stock.</p>
+			<h2 class="persona-hr">MOTIVATIONS</h2>
+			<p>Zachary enjoys going to his favorite comic book store just a few miles away from his school. He visits there weekly to see what’s hot on the shelves along with interacting with the staff he knows well. Despite the positive nature of the store, he gets frustrated when the new comics he wants aren’t in stock.</p>
 
-				<p class="quote"><em>“I’ve been reading comics ever since I was in my teens. I want to keep collecting and reading my favorite comics with the good people I interact with.”</em></p>
+			<p class="quote"><em>“I’ve been reading comics ever since I was in my teens. I want to keep collecting and reading my favorite comics with the good people I interact with.”</em></p>
 
-				<h2 class="persona-hr">GOALS</h2>
- 				<ul>
- 					<li>Visit his favorite comic book store again every week.</li>
- 					<li>Continue buying comics in phsycial format at his store.</li>
- 					<li>Continue connecting with others through comic-related 
- 					events and at his favorite comic store.</li>
- 				</ul>
+			<h2 class="persona-hr">GOALS</h2>
+	 			<ul>
+	 				<li>Visit his favorite comic book store again every week.</li>
+	 				<li>Continue buying comics in phsycial format at his store.</li>
+	 				<li>Continue connecting with others through comic-related 
+	 					events and at his favorite comic store.</li>
+	 			</ul>
 
 				<h2 class="persona-hr">FRUSTRATIONS</h2>
 				<ul>
- 					<li>Stores don’t have what he wants in stock when visiting
- 					sometimes.</li>
- 					<li>Price of buying physical comics is higher than buying
-					and reading it online.</li>
- 					<li>Would like an app that can help him find the comics he
- 					wants when his favorite store is out.</li>
- 				</ul>
+	 				<li>Stores don’t have what he wants in stock when visiting
+	 					sometimes.</li>
+	 				<li>Price of buying physical comics is higher than buying
+						and reading it online.</li>
+	 				<li>Would like an app that can help him find the comics he
+	 					wants when his favorite store is out.</li>
+	 			</ul>
 
-			</div>
-			
+		</div>
+		
+	</section>
 
-<!-- SWOT Analysis -->
-			
-			<div class="col-md-7 custom-offset my-2">
-				
-				<h1 class="cs-hr mt-3">Competitive Analysis</h1>
+	<!-- Competitive Analysis -->
+	<section id="competitive-analysis" class="main-grid">
 
-				
-				<p>My main competition was confirmed by my mass online survey. I discovered from the survey that 88.5% of respondents have used apps that involve comics (both buying and reading online) such as Amazon, DC, and Marvel. 57.7% of respondents found ease of use and reliability to be the best part of their apps of choice while 26.2% complained that navigation problems were the main issue.</p>
+		<div class="analysis-intro">
 
-				<div class="cs-swot">
+			<h1>Competitive Analysis</h1>
+					
+			<p>My main competition was confirmed by my mass online survey. I discovered from the survey that 88.5% of respondents have used apps that involve comics (both buying and reading online) such as Amazon, DC, and Marvel. 57.7% of respondents found ease of use and reliability to be the best part of their apps of choice while 26.2% complained that navigation problems were the main issue. </p>
+
+		</div>
+
+		<div class="cs-swot">
 					
 					<div class="cs-sw-strengths cc-sw-strengths">
 						<p class="swot-hrs"><strong>Strengths</strong></p>
@@ -296,225 +312,189 @@
 						</ul>
 					</div>
 
-				</div>
-			
-				
-				<p>A SWOT Analysis was conducted to better understand my competition from a big picture perspective. This helped me gain insight into how ComicCrusade would be positioned next to the identified competitors.</p>
-
-
-<!-- User Stories -->
-
-			<div class="user-stories">
-				
-				<h1 class="cs-hr mt-2">User Stories</h1>
-				
-				<p>After making personas collecting the survey results, user stories were made using Google Docs to help capture the potential needs of the users.</p>
-
-				<a href="https://drive.google.com/open?id=1sIeesqOWiRUlMfJoZdUeLs1KAGnyl-9Y5-jt6ZT9YZU" class="deliverable-links">Click here to view all user stories.</a>
-
 			</div>
 
-		</div> <!-- closes col-md-7-tag -->
-
-
-		<div class="col-12 my-2">		
-
-				<img src="images/cc-user-stories-img.png" class="img-fluid stories">
-		</div>
-
-
-<!-- User Flows -->
-
-		<div class="col-md-7 custom-offset my-2">
-
-			<div class="user-flows">
-				
-				<h1 class="cs-hr mt-3">User Flows</h1>
-				
-				<p>User flows were created using the porgram draw.io. They were based off of the main user stories created in the beginning of the project.</p>
-
-				<a href="https://drive.google.com/open?id=0Bw6eqczNjV2UeG5DVVlfRWtOakE" class="deliverable-links">Click here to view all user flows.</a>
-			
+			<div class="swot-p">
+				<p>A SWOT Analysis was conducted to better understand my competition from a big picture perspective. This helped me gain insight into how ComicCrusade would be positioned next to the identified competitors.
+				</p>
 			</div>
+	</section>
 
-		</div> <!-- closes col-md-7-tag -->
+	<!-- User Stories -->
+	<section id="user-stories" class="main-grid">
+		
+		<div class="user-stories">
 
-		<div class="col-12 my-2">
-				
-				<img src="images/cc-user-flows-img.svg" class="img-fluid flows">
+			<h1 class="cs-hr">User Stories</h1>
+					
+			<p>After making personas collecting the survey results, user stories were made using Google Docs to help capture the potential needs of the users.</p>
+
+			<a href="https://drive.google.com/open?id=1sIeesqOWiRUlMfJoZdUeLs1KAGnyl-9Y5-jt6ZT9YZU" class="deliverable-links">Click here to view all user stories.</a>
 
 		</div>
 
+		<img src="images/cc-user-stories-img.png" class="img-fluid stories">
 
-<!-- Wireframes -->
-		<div class="col-md-7 custom-offset my-2">
+	</section>
+
+	<!-- User Flows -->
+	<section id="user-flows" class="main-grid">
+
+		<div class="user-flows">
+			
+			<h1 class="cs-hr">User Flows</h1>
 				
-				<h1 class="cs-hr mt-3">Wireframes</h1>
-				
-				<p>I made wireframes based off of the main user flows first drafting them as sketches using my sketchbook and pencil. Afterwards, they were scanned and replicated using Adobe Illustrator.</p>
+			<p>User flows were created using the porgram draw.io. They were based off of the main user stories created in the beginning of the project.</p>
+
+			<a href="https://drive.google.com/open?id=0Bw6eqczNjV2UeG5DVVlfRWtOakE" class="deliverable-links">Click here to view all user flows.</a>
+
 		</div>
-			
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-locator-sketch-img.jpg" class="cc-sketches-1 img-fluid">
 
-			</div>
+		<img src="images/cc-user-flows-img.svg" class="img-fluid flows">
 
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-map-lo-img.png" class="cc-wireframe-img img-fluid">
+	</section>
 
-			</div>
+	<!-- Wireframes -->
+	<section id="wireframes" class="main-grid">
 
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-map-final-img.png" class="cc-wireframe-img img-fluid">
+		<div class="wireframes">
 
-			</div>
+			<h1 class="cs-hr">Wireframes</h1>
+					
+			<p>I made wireframes based off of the main user flows first drafting them as sketches using my sketchbook and pencil. Afterwards, they were scanned and replicated using Adobe Illustrator.</p>
 
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-inventory-sketch-img.jpg" class="cc-sketches-2 img-fluid">
+			<a href="https://drive.google.com/open?id=0Bw6eqczNjV2UeG5DVVlfRWtOakE" class="deliverable-links">Click here to view all wireframes.</a>
 
-			</div>
-
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-inventory-lo-img.png" class="cc-wireframe-img img-fluid">
-
-			</div>
-
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-inventory-final1-img.png" class="cc-wireframe-img img-fluid">
-
-			</div>
-			
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-detail-sketch-img.jpg" class="cc-sketches-3 img-fluid">
-
-			</div>
-
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-inventory-lo-img.png" class="cc-wireframe-img img-fluid">
-
-			</div>
-
-			<div class="col-md-4 mt-4 mb-2">
-				
-				<img src="images/cc-inventory-final2-img.png" class="cc-wireframe-img cc-inventory-final-mockup-2 img-fluid">
-
-			</div>
-			
-
-<!-- User Testing -->
-
-		<div class="col-md-7 custom-offset my-2">
-				
-				<h1 class="cs-hr mt-2">User Testing</h1>
-				
-				<p>Testing was performed using a combination of InVision, UsabilityHub, and Google Forms. Throughout the project, all wireframes (from lo-fidelity to final mockups) were tested and later updated based on the feedback provided from peers via Slack channels.</p>
-
-				<p>Most of the testing revolved around navigation and display of inventory content. The magnifying glass and order icons on the top right corner of the screen of the app were tested.</p>
-
-<!-- Prototype -->
-				
-				<h1 class="cs-hr mt-1">Prototype</h1>
-				
-				<p>I used InVision to create a clickable prototype for surveying and testing potential users for feedback</p>
-
-				<a href="https://invis.io/HEE9VK1F9" class="deliverable-links">Checkout the prototype here.</a>
-				
-				<img src="images/cc-prototype-img.png" class="cc-prototype-img img-fluid">
-
-<!-- Conclusion -->
-				
-				<h1 class="cs-hr">Conclusion</h1>
-				
-				<p>I came out of this project with a real appreciation for Google's Material Design Systems as well as the overall process of crafting mobile designs for apps. The world of comics is a massive one. From Marvel to DC to even indie comics, a lot of people love a good visual story. ComicCrusade aimed to help unify comic book fans and those wanting to get into comics.
-
-				<h2 class="cs-hr">Lessons Learned</h2>
-
-				<p><strong>When in doubt, sketch!</strong> Sketching helped me immensely when confronted with creative block. It pays to write your ideas out so you can sort through them and make a decision easier. Multiple times I've had to go back and revise my wireframes using sketching. When one frame was just not working, I had to come up with a new look for it to work better.</p>
-
-				<p><strong>It's better to have a finished "good enough" project than an unfinished "perfect" project.</strong> You can spend an eternity trying to make what you would consider a "prefect" project. You have to learn when to draw the line and say, "Enough is enough. If I keep this up, I'll never be finished." No design is perfect and you have to go with your gut when you would consider marking something as done.</p>
-
-				<p><strong>Always remember you main innovation.</strong> It’s really easy to get lost in the weeds with trying to handle other main aspects of the project and forget what your project is all about regarding its main differentiator(s). That’s why it's imperative to go back and remeber the main objective frequently.</p>
-
-
-			</div>
 		</div>
-	</div>
 
+			<!-- First Row -->
+			<img src="images/cc-locator-sketch-img.jpg" class="cc-sketches img-fluid">
 
-<!--Footer-->
-	<footer class="page-footer bg-dark center-on-small-only pt-0">
+			<img src="images/cc-map-lo-img.png" class="cc-wireframe-img1 img-fluid">
 
-	    <!--Footer Links-->
-	    <div class="container" id="contact-footer">
+			<img src="images/cc-map-final-img.png" class="cc-wireframe-img2 img-fluid">
 
+			<!-- Second Row -->
+			<img src="images/cc-inventory-sketch-img.jpg" class="cc-sketches img-fluid">
 
-	        <!--Grid row-->
+			<img src="images/cc-inventory1.png" class="cc-wireframe-img1 img-fluid">
 
-	        <hr class="rgba-white-light" style="margin: 0 15%;">
+			<img src="images/cc-inventory-final1-img.png" class="cc-wireframe-img2 img-fluid">
+			
+			<!-- Third Row -->
+			<img src="images/cc-detail-sketch-img.jpg" class="cc-sketches img-fluid">
 
-	        <!--Grid row-->
-	        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+			<img src="images/cc-inventory-lo-img.png" class="cc-wireframe-img1 img-fluid">
 
-	            <!--Grid column-->
-	            <div class="col-md-8 col-12 mt-5 text-white">
-	                <h2 style="line-height: 1.7rem">Connect</h2>
+			<img src="images/cc-inventory-final2-img.png" class="cc-wireframe-img2 img-fluid">
 
-	            </div>
-	            <!--Grid column-->
+	</section>
 
-	        </div>
-	        <!--Grid row-->
+	<!-- User Testing -->
+	<section id="user-testing" class="main-grid">
 
-	        <!--Grid row-->
-	        <div class="row">
+		<div class="testing-intro">
+		
+			<h1>User Testing</h1>
+				
+			<p>Testing was performed using InVision, UsabilityHub, and Google Forms. Here's what was tested:</p>
 
-	            <!--Grid column-->
+		</div>
 
-	            <div class="col-2 col-md-4"></div>
-	            <div class="col-8 col-md-4">
+		<div class="challenge">
 
-	                <div class="footer-socials mb-4">
-	                    <!--Email-->
-	                    <a class="email" href="mailto:Aidan_Herlong@alumni.baylor.edu"><img src="images/email-icon.png"/></a>
-	                    <!--LI-->
-	                    <a class="linked-in" href="https://www.linkedin.com/in/aidanherlong/"><img src="images/linkedin-icon.png"/></a>
-	                    <!--GH-->
-	                    <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png"/></a>
-	                </div>
-	            </div>
-	            <div class="col-2 col-md-4"></div>
-	            <!--Grid column-->
-	        </div>
-	        <!--Grid row-->
+			<h3>Challenge #1 - Finding Stores</h3>
+				
+			<p>ComicCrusade's first primary function was tested in order to understand how users would respond to its functionality.</p>
+			
+		</div>
 
-	    </div>
+			<img src="images/cc-lo-map1.png" class="test-img1 img-fluid">
 
-	    <!--Copyright-->
-	    <div class="footer-copyright text-center text-white pb-1">
-	        <div class="container-fluid">
-	           <p class="copyright">© 2018 Aidan D. Herlong</p>
-	        </div>
-	    </div>
-	    
+			<img src="images/cc-lo-map2.png" class="test-img2 img-fluid">
+
+			<img src="images/cc-lo-map3.png" class="test-img3 img-fluid">
+
+		<div class="challenge">
+
+			<h3>Challenge #2 - Finding and Using the Store's Inventory</h3>
+				
+			<p>My project's main innovative feature was tested to see how users would respond towards being able to view comics a store had.</p>
+			
+		</div>
+
+		<div class="challenge">
+
+			<h3>Challenge #3 - Order and Search Icons</h3>
+				
+			<p>The app's search and Order icons were tested to see what personal preference users had when it came to utilizing the them.</p>
+
+			<img src="images/cc-map-lo-img.png" class="test-img5 img-fluid">
+
+			<p>From the testing, here's what was gathered: about 54% of 11 users prefered to have the search icon on the left of the search due to using apps that provided a similar experience. As a result, the icons were switched </p>
+			
+		</div>
+
+	</section>
+
+	<!-- Prototype -->
+	<section id="prototype" class="main-grid">
+
+		<div class="prototype">
+
+			<h1>Prototype</h1>
+				
+			<p>I used InVision to create a clickable prototype for surveying and testing potential users for feedback</p>
+
+			<a href="https://invis.io/HEE9VK1F9" class="deliverable-links">Checkout the prototype here.</a>
+
+		</div>
+				
+			<img src="images/cc-prototype-img.png" class="cc-prototype-img img-fluid">
+
+	</section>
+
+	<!-- Conclusion -->
+	<section id="conclusion" class="main-grid">
+
+		<div class="conclusion">
+
+			<h1>Conclusion</h1>
+				
+			<p>I came out of this project with a real appreciation for Google's Material Design Systems as well as the overall process of crafting mobile designs for apps. The world of comics is a massive one. From Marvel to DC to even indie comics, a lot of people love a good visual story. ComicCrusade aimed to help unify comic book fans and those wanting to get into comics.
+
+			<h2 class="cs-hr">Lessons Learned</h2>
+
+			<p><strong>When in doubt, sketch!</strong> Sketching helped me immensely when confronted with creative block. It pays to write your ideas out so you can sort through them and make a decision easier. Multiple times I've had to go back and revise my wireframes using sketching. When one frame was just not working, I had to come up with a new look for it to work better.</p>
+
+			<p><strong>It's better to have a finished "good enough" project than an unfinished "perfect" project.</strong> You can spend an eternity trying to make what you would consider a "prefect" project. You have to learn when to draw the line and say, "Enough is enough. If I keep this up, I'll never be finished." No design is perfect and you have to go with your gut when you would consider marking something as done.</p>
+
+			<p><strong>Always remember your main innovation.</strong> It’s really easy to get lost in the weeds with trying to handle other main aspects of the project and forget what your project is all about regarding its main differentiator(s). That’s why it's imperative to go back and remeber the main objective frequently.</p>
+
+		</div>
+
+	</section>
+
+<!-- Footer -->
+
+	<footer class="my-footer">
+		
+		<p class="copyright">Copyright © 2018 Aidan D. Herlong</p>
+
+		<div class="footer-links">
+          <!--Email-->
+          <a class="email" href="mailto:Aidan_Herlong@alumni.baylor.edu"><img src="images/email-icon.png"/></a>
+          <!--LI-->
+          <a class="linked-in" href="https://www.linkedin.com/in/aidanherlong/"><img src="images/linkedin-icon.png"/></a>
+          <!--GH-->
+          <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png"/></a>
+
+		</div>
 
 	</footer>
 
+<!-- Javascript -->
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js.map"></script>
-
+	<script src="js/style.js"></script>
 
 </body>
-
-
-</html>
