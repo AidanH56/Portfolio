@@ -198,7 +198,8 @@
 		display: grid;
 		grid-template-columns: repeat(10, 12.5%);
 		grid-template-rows: auto;
-		grid-row-gap: 16px;
+		/*grid-row-gap: 16px;*/
+		grid-row-gap: 36px;
 	}
 
 /* ABOUT ME PAGE */
@@ -320,10 +321,6 @@
 		display: inline-block;
 	}
 
-	.persona-1 {
-		
-	}
-
 	.persona-2 {
 		margin-left: 26px;
 
@@ -355,11 +352,7 @@
 		grid-column-start: 3;
 	}
 
-	.test-img1, .test-img2, .test-img3, .test-img4, .test-img5 {
-		
-	}
-
-	.cs-hero-container, .stories, .flows, .cc-sketches, .test-img1, .test-img5 {
+	.cs-hero-container, .stories, .flows, .cc-sketches, .test-img1{
 		grid-column-start: 1;
 	}
 
@@ -422,6 +415,18 @@
 		margin-bottom: 32px;
 	}
 
+	.ur-point-3 {
+		margin-right: 16px;
+	}
+
+	.persona-left, .persona-1, .test-img1 {
+		margin-left: 11%;
+	}
+
+	.test-img3 {
+		margin-left: -9%;
+	}
+
 	.persona-left {
 		/*float: left;*/
 		margin-right: 48px;
@@ -437,10 +442,8 @@
 	} 
 
 	.cs-swot {
-		/*margin-top: 35px;*/
 		display: grid;
 		max-width: 1000px;
-	    margin: auto; 
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		grid-gap: 10px;
