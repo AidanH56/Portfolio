@@ -45,6 +45,7 @@
 		font-style: italic;
 	}
 
+
 /* FOOTER */
 
 	.my-footer {
@@ -330,6 +331,19 @@
 		display: none;
 	}
 
+	.intro {
+		margin-top: 16px;
+	}
+
+	.quote {
+		border-left: 4px solid;
+		padding: 0 4%;
+		margin-top: 24px;
+		margin-left: 4%;
+		font-size: 1.1rem;
+		color: #9BA0B3;
+	}
+
 /* COMICCRUSADE PAGE */
 	.cc-hero {
 		background-image: url('../images/cc-hero-bg-img.png');
@@ -338,7 +352,7 @@
 	.cc-hero-img {
 		grid-column-start: 7;
 		margin-top: 120px;
-		margin-bottom: 32px;
+		margin-bottom: 48px;
 		height: auto;
 		display: block;
 		width: 93%;
@@ -360,6 +374,10 @@
 		margin-left: 4%;
 		margin-top: 170px;
 		margin-bottom: 32px;
+	}
+
+	.flows {
+		margin-left: 48px;
 	}
 
 	.user-research, .research-conclusion, .personas, .analysis-intro, 
@@ -407,7 +425,11 @@
 		grid-column-end: span 6;
 	}
 
-	.stories, .flows {
+	.flows {
+		grid-column-end: span 7;
+	}
+
+	.stories {
 		grid-column-end: span 8;
 	}
 
@@ -415,16 +437,32 @@
 		margin-bottom: 32px;
 	}
 
+	.ur-point-2, .ur-point-4 {
+		margin-left: 15%;
+	}
+
 	.ur-point-3 {
 		margin-right: 16px;
 	}
 
-	.persona-left, .persona-1, .test-img1 {
+	.persona-left, .persona-1 {
 		margin-left: 11%;
 	}
 
-	.test-img3 {
-		margin-left: -9%;
+	.test-img1, .cc-sketches {
+		margin-left: 25%;
+	}
+
+	.cc-sketches {
+		margin-right: -25%;
+	}
+
+	.test-img3, .cc-wireframe-img2 {
+		margin-left: -25%;
+	}
+
+	.cc-wireframe-img2 {
+		margin-right: 25%;
 	}
 
 	.persona-left {
@@ -718,6 +756,11 @@
 		.connect {
 			grid-template-columns: 350px auto 350px;
 		}
+
+		.cs-hero-container {
+			margin-top: 220px;
+			width: 80%;
+		}
 	}
 
 	@media screen and (min-width: 1242px) {
@@ -729,5 +772,12 @@
 	@media screen and (min-width: 1269px) {
 		.connect {
 			grid-template-columns: auto 400px auto;
+		}
+	
+
+	@media screen and (min-width: 1400px) {
+		.cs-hero-container {
+			margin-top: 270px;
+			width: 65%;
 		}
 	}
