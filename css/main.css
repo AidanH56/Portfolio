@@ -238,10 +238,6 @@
 		grid-area: content;
 	}
 
-	.test-img {
-		margin-top: 5.5em;
-	}
-
 	.main {
 		grid-row: 2;
 	}
@@ -281,10 +277,6 @@
 		text-align: left;
 		padding-bottom: 50px; /* Compensating for img top margin */
 		box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
-	}
-
-	.cs-hero-container {
-		
 	}
 
 	.cs-hero-hr, .cs-hero-p {
@@ -452,17 +444,11 @@
 
 	.test-img1, .cc-sketches {
 		margin-left: 25%;
-	}
-
-	.cc-sketches {
 		margin-right: -25%;
 	}
 
 	.test-img3, .cc-wireframe-img2 {
 		margin-left: -25%;
-	}
-
-	.cc-wireframe-img2 {
 		margin-right: 25%;
 	}
 
