@@ -10,173 +10,134 @@
 
 	<!-- Title -->
 
-	<title>Aidan's UX Design Portfolio</title>
-
-	<!-- Bootstrap -->
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Aidan Herlong's UX Portfolio</title>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i" rel="stylesheet">
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
 	
 </head>
 
+
 <body>
 
-	<!-- Nav Bar-->
 
-	<nav class="navbar navbar-expand-md navbar-dark main-nav fixed-top">
-		  <a class="navbar-brand" href="index.html"><img src="images/logo-img.png" class="portfolio-logo img-fluid"/>Aidan D. Herlong</a>
+	<!-- Nav Bar -->
+	<header>
 
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collpase_target">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-	
+		<div class="logo-container"> <!-- Centers logo and header -->
+			
+			<a class="logo" href="index.html"><img src="images/logo-img.png" class="portfolio-logo"/></a>
 
-		  <div class="collapse navbar-collapse" id="collpase_target">
-		    <ul class="nav navbar-nav navbar-right ml-auto mr-3">
-		      <li class="nav-item">
-		        <a class="nav-link" href="index.html#case-studies">Case Studies</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#contact-footer">Contact</a>
-		      </li>
-		    </ul>
-		  </div>
-	</nav>
-
-<!-- Hero -->
-
-	<div class="jumbotron main-jumbo animated fadeIn">
-		<div class="container-fluid home-hero">
-	  		<h1 class="display-6 hero-header animated fadeIn">Hi, I'm Aidan Herlong!</h1>
-	  		<p class="lead mt-2 p-hero animated fadeIn">I'm a UX Designer from Houston, TX. I suppose you want to know more about me (admit it!).Well then:</p>
-	 	    <p class="lead">
-	   	    	<a class="btn btn-outline-light btn-lg hero-btn mt-4 animated fadeIn" href="aboutme.html" role="button">LET'S CHAT</a>
-	 	    </p>
-	 	</div>
-	</div>
-
-<!-- Case Studies Section -->
-
-	<div class="container" id="case-studies">
-
-		<!-- CC Image --> 
-		
-		<div class="row">
-		  <div class=" col-12 col-md-5 offset-md-1"> 	
-
-		  	<img src="images/comic-crusade-img.png" class="cc-img img-fluid"/>
-
-		  </div>
-
-		  <!-- CC Info -->
-
-		  <div class="cc-container col-12 col-md-5">
-
-
-		  	<h1 class="cc-header">ComicCrusade</h1>
-		  	<p class="cc-p mt-2">Android OS app dedicated to finding the comics you are looking for in nearby stores.</p>
-		  	<a class="btn btn-outline-dark btn-lg mt-2 cc-btn" href="comiccrusade.html" role="button">SEE CASE STUDY</a>
-
-		  </div>
+			<h1 class="logo-hr">Aidan D. Herlong</h1>
 		</div>
 
-	</div>
+		<nav>
 
-	<div class="container">
+			<ul class="nav-links">
+
+				<li><a class="nav-link" href="index.html#case-studies">Case Studies</a></li>
+
+			    <li><a class="nav-link" href="#contact-footer">Contact</a></li>
 		
-		<div class="row">
+			</ul>
 
-		<!-- FS Info -->
+		</nav>
+
+		<div id="sideNavigation" class="sidenav" aria-hidden="true">
 		 
-		  <div class="col-md-5 offset-md-1">
-		  	<h1 class="fs-header">FoodSwitch</h3>
-		  	<p class="fs-p mt-2">A web-based app for people who want to live a healthier lifestyle.</p>
-		  	<a class="btn btn-outline-dark btn-lg fs-btn mt-2" href="foodswitch.html" role="button">SEE CASE STUDY</a>
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="navigation button">&times;</a>
 
-		  </div>
+		 	<div class="links">
 
-		  <!-- FS Image -->
+			  	<li class="side-link-1"><a class="nav-link" href="index.html#case-studies">Case Studies</a></li>
 
-		  <div class="col-md-5">
-		  	
-		  	<img src="images/foodswitch-img.png" class="fs-img img-fluid"/>
+			    <li class="side-link-2"><a class="nav-link" href="#contact-footer">Contact</a></li>
 
-		  </div>
+		  	</div>
 
 		</div>
 
-	</div>
-	
-<!--Footer-->
-<footer class="page-footer bg-dark center-on-small-only pt-0">
+		<div class="menu-toggle" onclick="openNav()" aria-label="navigation button">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+		    <div class="bar3"></div>
+		</div>
 
-    <!--Footer Links-->
-    <div class="container" id="contact-footer">
+	</header>
 
+	<!-- Hero -->
 
-        <!--Grid row-->
+	<section id="hero" class="main-hero main-grid">
 
-        <hr class="rgba-white-light" style="margin: 0 15%;">
+		<!-- Holds hero content text"-->
+		<div class="cs-hero-container">
 
-        <!--Grid row-->
-        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+			<h1 class="animated fadeIn">Hi, I'm Aidan Herlong!</h1>
 
-            <!--Grid column-->
-            <div class="col-md-8 col-12 mt-5 text-white">
-                <h2 style="line-height: 1.7rem">Connect</h2>
+            <p class="animated fadeIn">I'm a UX Designer from Houston, TX. I suppose you want to know more about me. Well then:</p>
+             
+             <a class="button button-b animated fadeIn" href="aboutme.html" role="button">LET'S CHAT</a>
+                
 
-            </div>
-            <!--Grid column-->
+		</div>
 
-        </div>
-        <!--Grid row-->
+		<!-- Holds image for hero -->
+			
+			<img src="images/avatar-img.png" class="avatar animated fadeIn">
 
-        <!--Grid row-->
-        <div class="row">
+	</section>
 
-            <!--Grid column-->
+	<!-- Main Content-->
 
-            <div class="col-2 col-md-4"></div>
-            <div class="col-8 col-md-4">
+	<section id="case-studies" class="main-grid case-studies animated fadeIn">
 
-                <div class="footer-socials mb-4">
-                    <!--Email-->
-                    <a class="email" href="mailto:Aidan_Herlong@alumni.baylor.edu"><img src="images/email-icon.png"/></a>
-                    <!--LI-->
-                    <a class="linked-in" href="https://www.linkedin.com/in/aidanherlong/"><img src="images/linkedin-icon.png"/></a>
-                    <!--GH-->
-                    <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png"/></a>
-                </div>
-            </div>
-            <div class="col-2 col-md-4"></div>
-            <!--Grid column-->
-        </div>
-        <!--Grid row-->
+		 <img src="images/comic-crusade-img.png" class="cc-app">
 
-    </div>
+		 <div class="cc-case">
 
-    <!--Copyright-->
-    <div class="footer-copyright text-center text-white pb-1">
-        <div class="container-fluid">
-           <p class="copyright">© 2018 Aidan D. Herlong</p>
-        </div>
-    </div>
-    
+		  	<h2>ComicCrusade</h1>
+		  	<p>Android OS app dedicated to finding the comics you are looking for in nearby stores.</p>
+		  	<a class="button button-b" href="comiccrusade.html" role="button">SEE CASE STUDY</a>
 
-</footer>
+		  </div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	
+		  <div class="fs-case">
 
+		  	<h2>FoodSwitch</h1>
+		  	<p>A web-based app for people who want to live a healthier lifestyle.</p>
+		  	<a class="button button-b" href="foodswitch.html" role="button">SEE CASE STUDY</a>
+
+		  </div>
+
+		   <img src="images/foodswitch-img.png" class="fs-app">
+
+	</section>
+
+<!-- Footer -->
+
+	<footer id="contact-footer" class="my-footer animated fadeIn">
+		
+		<p class="copyright">Copyright © 2018 Aidan D. Herlong</p>
+
+		<div class="footer-links">
+          <!--Email-->
+          <a class="email" href="mailto:Aidan_Herlong@alumni.baylor.edu"><img src="images/email-icon.png"/></a>
+          <!--LI-->
+          <a class="linked-in" href="https://www.linkedin.com/in/aidanherlong/"><img src="images/linkedin-icon.png"/></a>
+          <!--GH-->
+          <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png"/></a>
+
+		</div>
+
+	</footer>
+
+<!-- Javascript -->
+
+	<script src="js/style.js"></script>
 
 </body>
-</html>

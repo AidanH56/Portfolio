@@ -53,7 +53,6 @@
 		display: flex;
 		justify-content: space-between;
 		text-align: center;
-		margin-top: 48px;
 	}
 
 	.copyright {
@@ -200,8 +199,77 @@
 		display: grid;
 		grid-template-columns: repeat(10, 12.5%);
 		grid-template-rows: auto;
-		/*grid-row-gap: 16px;*/
 		grid-row-gap: 36px;
+	}
+
+/* HOMEPAGE */
+
+	.main-hero {
+		background-color: #fefefe;
+	}
+
+	.avatar {
+		grid-column-start: 6;
+		grid-column-end: span 3;
+		margin-top: 230px;
+		margin-bottom: 60px;
+		margin-left: 86px;
+		height: auto;
+		display: block;
+		width: 70%;
+	}
+
+	.case-studies {
+		background-color: #d32f53; 
+		margin-top: 32px;
+	}
+
+	.cc-app {
+		grid-column-start: 2;
+		grid-column-end: span 3;
+		margin-top: 72px;
+	}
+
+	.fs-case, .fs-app {
+		margin-top: 48px;
+		margin-bottom: 48px;
+	}
+
+	.cc-case, .fs-case {
+		width: 85%;
+	}
+
+	.cc-case {
+		grid-column-start: 5;
+		grid-column-end: span 3;  
+	}
+
+	.fs-app {
+		grid-column-start: 5;
+		grid-column-end: span 3;
+		margin-top: 69px;
+	}
+
+	.cc-app, .fs-app {
+		width: 100%;
+		display: block;
+	}
+
+	.cc-case, .fs-app {
+		margin-left: 40px;
+	}
+
+/*	.cc-app, .fs-case {
+		margin-left: 24px;
+	} */
+
+	.fs-case {
+		grid-column-start: 2;
+		grid-column-end: span 3;
+	}
+
+	.cc-case, .fs-case {
+		margin-top: 90px;
 	}
 
 /* ABOUT ME PAGE */
@@ -267,6 +335,7 @@
 	}
 
 /* CASE STUDY UNIVERSAL CLASSES */
+
 	.cs-hero {
 		display: grid;
 		grid-template-columns: 150px auto 260px;
@@ -283,9 +352,11 @@
 		color: #333333;
 	}
 
+	.cs-hero-w {
+		color: #ffffff;
+	}
+
 	.button {
-	    border: 2px solid #333333;
-	    color: #333333;
 	    padding: 12px 32px;
 	    text-align: center;
 	    text-decoration: none;
@@ -293,6 +364,16 @@
 	    margin: 4px 2px;
 	    cursor: pointer;
 	    transition-duration: 0.4s;
+	}
+
+	.button-b {
+		border: 2px solid #333333;
+	    color: #333333;
+	}
+
+	.button-w {
+		border: 2px solid #ffffff;
+	    color: #ffffff;
 	}
 
 	.button:hover {
@@ -328,6 +409,11 @@
 		margin-top: 16px;
 	}
 
+	.persona-info {
+		margin-top: -28px;
+		margin-bottom: 32px;
+	}
+
 	.quote {
 		border-left: 4px solid;
 		padding: 0 4%;
@@ -335,6 +421,10 @@
 		margin-left: 4%;
 		font-size: 1.1rem;
 		color: #9BA0B3;
+	}
+
+	.cs-conclusion {
+		margin-bottom: 48px;
 	}
 
 /* COMICCRUSADE PAGE */
@@ -359,7 +449,7 @@
 		grid-column-start: 3;
 	}
 
-	.cs-hero-container, .stories, .flows, .cc-sketches, .test-img1{
+	.cs-hero-container, .stories, .flows, .cc-sketches, .test-img1 {
 		grid-column-start: 1;
 	}
 
@@ -381,7 +471,7 @@
 		margin-right: 9%;
 	}
 
-	.ur-point-1, .ur-point-3, .persona-1, .persona-left {
+	.ur-point-1, .ur-point-3, .persona-1, .persona-left, .two-img-a {
 		grid-column-start: 2; 
 	}
 
@@ -390,7 +480,7 @@
 		grid-column-end: 6;
 	}
 
-	.cc-wireframe-img2, .test-img3{
+	.cc-wireframe-img2, .test-img3 {
 		grid-column-start: 7;
 		grid-column-end: 9;
 	}
@@ -399,7 +489,12 @@
 		grid-column-start: 5;
 	}
 
-	.cc-hero-img, .persona-right, .cc-sketches, .test-img1 {
+	.two-img-b {
+		grid-column-start: 6;
+	}
+
+	.cc-hero-img, .persona-right, .cc-sketches, .test-img1, .two-img-a,
+		.two-img-b {
 		grid-column-end: span 2;
 	}
 
@@ -408,7 +503,7 @@
 		grid-column-end: span 3;
 	}
 
-	.intro, .cc-prototype-img, .cs-hero-container {
+	.intro, .cs-hero-container, .cc-prototype-img, .fs-hero-img {
 		grid-column-end: span 4;
 	}
 
@@ -434,8 +529,8 @@
 		margin-left: 15%;
 	}
 
-	.ur-point-3 {
-		margin-right: 16px;
+	.ur-point-1, .ur-point-3 {
+		margin-right: 32px;
 	}
 
 	.persona-left, .persona-1 {
@@ -504,6 +599,61 @@
 		background-color: #9b532c;
 	}
 
+/* FOODSWITCH PAGE */
+
+	.fs-hero {
+		background-image: url('../images/fs-hero-bg-img.png')
+	}
+
+	.fs-hero-img {
+		grid-column-start: 5;
+		margin-top: 170px;
+		margin-bottom: 60px;
+		height: auto;
+		display: block;
+		width: 100%;
+	}
+
+	.fs-ur-1, .fs-ur-2, .fs-ur-3 {
+		width: 85%;
+	}
+
+	.fs-ur-1 {
+		grid-column-start: 1;
+		grid-column-end: span 3;
+		margin-left: 11%;
+	}
+
+	.fs-ur-2 {
+		grid-column-start: 4;
+		grid-column-end: span 2;
+	}
+
+	.fs-ur-3 {
+		grid-column-start: 7;
+		grid-column-end: span 2;
+	}
+
+	.fs-ur-1, .fs-ur-3 {
+		margin-right: 32px;
+	}
+
+	.fs-sw-strengths {
+		background-color: #00aab2;
+	}
+
+	.fs-sw-weaknesses {
+		background-color: #0f7c79;
+	}
+
+	.fs-sw-opportunities {
+		background-color: #16c1c1;
+	}
+
+	.fs-sw-threats {
+		background-color: #079393;
+	}
+
 /* MEDIA QUERIES */
 
 	@media screen and (max-width: 320px) {
@@ -541,7 +691,7 @@
 			margin-left: 9%;
 		}
 
-		.logo-hr, .cc-hero-img, .flows {
+		.logo-hr, .cc-hero-img, .fs-hero-img, .flows {
 			display: none;
 		}
 
@@ -559,14 +709,33 @@
 			grid-column-end: span 7;
 		}
 
-		.cc-sketches, .cc-wireframe-img1, .cc-wireframe-img2 {
+		.cc-sketches, .cc-wireframe-img1, .cc-wireframe-img2, .two-img-a, 
+			.two-img-b, .test-img1, .test-img2, .test-img3 {
 			display: none;
 		}
+
 	}
 
 	@media screen and (max-width: 556px) {
 		.about-hero-hr {
 			margin-top: 0;
+		}
+
+		.avatar {
+			display: none;
+		}
+
+		.my-footer {
+			display: block;
+		}
+
+		.footer-links {
+			margin-right: 0px;
+		}
+
+		.copyright {
+			margin-left: 0px;
+			padding-top: 8px;
 		}
 	}
 
@@ -582,10 +751,6 @@
 			margin-top: 110px;
 		}
 
-		.side-link-1 {
-
-		}
-
 		.closebtn {
 			position: relative;
 			margin-top: 81px;
@@ -593,6 +758,27 @@
 
 		.nav-links {
 			display: none;
+		}
+
+		.fs-ur-1, .fs-ur-2, .fs-ur-3 {
+			width: 90%;
+		}
+
+		.fs-ur-1 {
+			grid-column-start: 3;
+			grid-column-end: span 4;
+			margin-left: 5%;
+		}
+
+		.fs-ur-2 {
+			grid-column-start: 1;
+			grid-column-end: span 4;
+			margin-left: 9%;
+		}
+
+		.fs-ur-3 {
+			grid-column-start: 6;
+			grid-column-end: span 3;
 		}
 
 	}
@@ -645,11 +831,25 @@
 		h3 {
 			font-size: 24px;
 		}
+
+		/* MAIN PAGE */
+
+		.avatar {
+			grid-column-start: 5;
+			grid-column-end: span 4;
+		}
 	}
 
 	@media screen and (max-width: 868px) {
 		/* COMICCRUSADE PAGE */
 		.cc-hero-img {
+			grid-column-start: 6;
+			grid-column-end: span 3;
+			width: 83%;
+		}
+
+		/* FOODSWITCH PAGE */
+		.fs-hero-img {
 			grid-column-start: 6;
 			grid-column-end: span 3;
 			width: 83%;

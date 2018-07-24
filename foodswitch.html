@@ -12,652 +12,581 @@
 
 	<title>FoodSwitch</title>
 
-	<!-- Bootstrap -->
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Raleway:500|Vollkorn:400i" rel="stylesheet">
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/animate.css">
-
+	
 </head>
 
 
 <body>
 
-	<!-- Nav Bar-->
 
-	<nav class="navbar navbar-expand-md navbar-dark main-nav fixed-top">
-		  <a class="navbar-brand" href="index.html"><img src="images/logo-img.png" class="portfolio-logo img-fluid"/>Aidan D. Herlong</a>
+	<!-- Nav Bar -->
+	<header>
 
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collpase_target">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-	
+		<div class="logo-container"> <!-- Centers logo and header -->
+			
+			<a class="logo" href="index.html"><img src="images/logo-img.png" class="portfolio-logo"/></a>
 
-		  <div class="collapse navbar-collapse" id="collpase_target">
-		    <ul class="nav navbar-nav navbar-right ml-auto mr-3">
-		      <li class="nav-item">
-		        <a class="nav-link" href="index.html#case-studies">Case Studies</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#contact-footer">Contact</a>
-		      </li>
-		    </ul>
-		  </div>
-	</nav>
+			<h1 class="logo-hr">Aidan D. Herlong</h1>
+		</div>
+
+		<nav>
+
+			<ul class="nav-links">
+
+				<li><a class="nav-link" href="index.html#case-studies">Case Studies</a></li>
+
+			    <li><a class="nav-link" href="#contact-footer">Contact</a></li>
+		
+			</ul>
+
+		</nav>
+
+		<div id="sideNavigation" class="sidenav" aria-hidden="true">
+		 
+		 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="navigation button">&times;</a>
+
+		 	<div class="links">
+
+			  	<li class="side-link-1"><a class="nav-link" href="index.html#case-studies">Case Studies</a></li>
+
+			    <li class="side-link-2"><a class="nav-link" href="#contact-footer">Contact</a></li>
+
+		  	</div>
+
+		</div>
+
+		<div class="menu-toggle" onclick="openNav()" aria-label="navigation button">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+		    <div class="bar3"></div>
+		</div>
+
+	</header>
 
 	<!-- Hero -->
 
+	<section id="hero" class="fs-hero main-grid">
 
-		<div class="container-fluid fs-jumbo animated fadeIn">
-			<div class="row">
-				<div class="col-md-5 fs-hero">
-				  <h1 class="display-6 cs-hero-hr1 animated fadeIn">FoodSwitch</h1>
-				  <h4 class="cs-hero-hr2 animated fadeIn">6 weeks | Product Showcase Project</h4>
-				 	 <p class="fs-hero-p animated fadeIn">A web-based app for people who want to live a healthier lifestyle.</p>
-				 	 <p class="lead">
-			   	    	<a class="btn btn-outline-light btn-lg hero-btn mt-4 animated fadeIn" href="" role="button">VIEW PROTOTYPE</a>
-			 	    </p>
-			 	</div>
-			 	<div class="col-md-6">
-			 		<img src="images/fs-hero.png" class="fs-hero-img img-fluid">
-			 	</div>
-			</div>
-		</div>
+		<!-- Holds hero content text"-->
+		<div class="cs-hero-container">
 
+			<h1 class="cs-hero-w animated fadeIn">FoodSwitch</h1>
 
-<!-- Grid System -->
-
-<!-- Main Objectives -->
-
-	<div class="container">
-		
-		<div class="row">
-			
-			<div class="col-md-3 offset-md-3 mt-3">
-
-				<h4 class="cc-challenge-hr">Meta-Challenge</h4>
-
-			</div>
-			<div class="col-md-3 mt-3">apply knowledge of designing landing pages and dashboards.</div>
-
+			<h3 class="cs-hero-w animated fadeIn">6 weeks | Product Showcase App</h3>
+                
+                 <p class="cs-hero-w animated fadeIn">A web-based app for people who want to live a healthier lifestyle.</p>
+             
+                 <a class="button button-w animated fadeIn" href="https://invis.io/HEE9VK1F9" role="button">VIEW PROTOTYPE</a>
+                
 
 		</div>
 
-		<div class="row">
+		<!-- Holds image for hero -->
 			
-			<div class="col-md-3 offset-md-3 mt-3">
+			<img src="images/fs-hero.png" class="fs-hero-img">
 
-				<h4 class="cs-task-hr">Underlying Task</h4>
+	</section>
 
-			</div>
-			<div class="col-md-3 mt-3">create a landing page and dashboard design for a diet-tracking app.
-			</div>
-			
+	<!-- Main Content-->
 
-		</div>
+	<section id="introduction" class="main-grid">
 
-		<div class="row">
-			
-			<div class="col-md-3 offset-md-3 mt-3">
-				<h4 class="cs-roles-hr">My Roles</h4>
-			</div>
-			<div class="col-md-3 mt-3">digital product research and screen design.</div>
-			
+		<div class="intro">
 
-		</div>
-
-<!-- User Research -->
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3">
+			<div class="intro-container">
 				
-				<h1 class="cs-hr">User Research</h1>
+				<p class="meta-challenge"><span>Meta-Challenge:</span> apply knowledge of designing landing pages and dashboards.</p>
 
-			</div>
-			
+				<p class="task"><span>Underlying Task:</span> create a landing page and dashboard design for a diet-tracking app.</p>
 
-		</div>
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-4">
-				
-				<p>A mass online survey was sent to social media and slack channels I'm affiliated with. From there, here's what I received: </p>
-
-			</div>
-			<div class="col-md-3"></div>
-			
-
-		</div>
-
-		<div class="row my-4">
-			
-			<div class="col-md-2 my-2">
-				
-				<img src="images/fs-graph-img.png" class="cc-user-research-img-g1 img-fluid">
-
-			</div>
-			<div class="col-md-2">
-				
-				<p class="cc-p-urpoint-1"><strong>69%</strong> want a simpler way of tracking their diet.</p>
-
-			</div>
-			<div class="col-md-2 my-2">
-				
-				<img src="images/fs-heart-img.png" class="cc-user-research-img-g1 img-fluid">
-
-			</div>
-			<div class="col-md-2">
-				
-				<p class="cc-p-urpoint-2"><strong>85.7%</strong>of respondents have considered finding ways to improve their current lifestyle.</p>
-
-			</div>
-			
-
-			
-			<div class="col-md-2 mb-2">
-				
-				<img src="images/fs-smapho-img.png" class="cc-user-research-img-g2 img-fluid">
-
-			</div>
-			<div class="col-md-2">
-				
-				<p class="cc-p-urpoint-3"><strong>71%</strong>of respondents have used a diet tracking app before (i.e. myfitnesspal; Fooducate; MyPlate).</p>
-
-			</div>
-			
-
-		</div>
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-4">
-				
-				<p>The survey results revealed that most of the users do try to live a healthier lifestyle but struggle with it due to their current diet and/or health habits. Users who have used a diet tracking app in the past loved tracking their diets but often complained about the mundanity and complexity of inputting their calories and exercise. They had to go through too many entries just to input one food item or meal.</p>
-
-			</div>
-			
-
-		</div>
-
-
-<!-- Personas -->
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-2">
-				
-				<h1 class="cs-hr">Personas</h1>
-
-			</div>
-			
-
-		</div>
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-4">
-				
-				<p>Personas were crafted based off of the results of the research conducted in this project. Both the survey results and the 1-on-1 interview I performed helped me identify my target groups:</p>
-
-			</div>
-			<div class="col-md-3"></div>
-			
-
-		</div>
-
-		<div class="row">
-			
-			<div class="col-md-4 offset-md-2 my-4">
-				
-				<img src="images/fs-eric-img.png" class="cc-personas-img img-fluid">
-
-			</div>
-
-			<div class="col-md-4 my-4 cc-carl-persona-img">
-				
-				<img src="images/fs-matthew-img.png" class="cc-personas-img img-fluid">
+				<p class="roles"><span>My Roles:</span> digital product research and screen design.</p>
 
 			</div>
 		</div>
 
-		<div class="row">
+	</section>
 
-			<div class="col-md-4 offset-md-2 my-2">
+	<!-- User Research -->
+
+	<section id="user-research" class="main-grid">
+
+		<div class="user-research">
 				
-				<h1 class="test">Eric</h1>
+			<h2>User Research</h2>
+			
+				
+			<p>A mass online survey was sent to social media and slack channels I'm affiliated with. From there, here's what I received </p>
 
-				<p class="persona-bio persona-hr lead">37 Year-Old Programmer</p>
+		</div>
+			
+		<div class="fs-ur-1">
 
-				<h2 class="persona-hr">MOTIVATIONS</h2>
-				<p>Eric has often struggled living healthier due to working long hours. In addition, having an addiction to fast food. Despite this, he wishes to live a healthier lifestyle than the one he currently has. He has made small adjustments to his diet by eating more fruits and going to a fast food restaurant only for lunch instead of both lunch and dinner. Eric loves to track his progress on his health impovements by writing down his caloric intake and what kind of foods he eats but finds the process mundane and tedious. He wishes for a tool that can help him with making the process more enjoyable and rewarding.</p>
+			<img src="images/fs-graph-img.png" class="cc-research-img research-img">
+					
+			<p class="cc-ur-p"><strong>69%</strong> want a simpler way of tracking their diet.</p>
 
-				<p class="quote"><em>“I’ve always struggled eating healither and being fit. I’m determined to take it up to the next level.”</em></p>
+		</div>
 
-				<h2 class="persona-hr">GOALS</h2>
- 				<ul>
- 					<li>Keeping track of calories consumed and quality of food eaten.</li>
+		<div class="fs-ur-2">
+
+			<img src="images/fs-heart-img.png" class="cc-research-img research-img">
+					
+			<p class="cc-ur-p"><strong>85.7%</strong> of respondents have considered finding ways to improve their current lifestyle.</p>
+
+		</div>
+			
+		<div class="fs-ur-3">
+					
+			<img src="images/fs-smapho-img.png" class="cc-research-img research-img">
+					
+			<p class="cc-ur-p"><strong>71%</strong> of respondents have used a diet tracking app before (i.e. myfitnesspal; Fooducate; MyPlate).</p>
+
+		</div>
+			
+		<div class="research-conclusion">
+
+			<p>The survey results revealed that <strong>most of the users do try to live a healthier lifestyle but struggle with it due to their current diet and/or health habits</strong>. Users who have used a diet tracking app in the past loved tracking their diets but often complained about the mundanity and complexity of inputting their calories and exercise. They had to go through too many entries just to input one food item or meal.</p>
+
+		</div>
+	</section>
+
+	<!-- Personas -->
+
+	<section id="personas" class="main-grid">
+
+		<div class="personas">		
+
+			<h2>Personas</h2>
+					
+			<p>Personas were crafted based off of the results of the research conducted in this project. Both the survey results and the 1-on-1 interview I performed helped me identify my target groups:</p>
+
+		</div>
+					
+			<img src="images/fs-eric-img.png" class="persona-1 cc-personas-img">
+
+			<img src="images/fs-matthew-img.png" class="persona-2 cc-personas-img">
+
+
+		<!--		<div class="col-md-4 my-4 cc-carl-persona-img">
+					
+					<img src="images/cc-carl-img.png" class="cc-personas-img">
+
+				</div>
+		-->
+
+		<div class="persona-left">
+					
+			<h2 class="test">Eric</h2>
+
+			<p class="persona-bio persona-hr lead">23-Year-Old Designer</p>
+
+			<h3>MOTIVATIONS</h3>
+			<p>Eric has often struggled living healthier due to working long hours. In addition, having an addiction to fast food. Despite this, he wishes to live a healthier lifestyle than the one he currently has. He has made small adjustments to his diet by eating more fruits and going to a fast food restaurant only for lunch instead of both lunch and dinner. Eric loves to track his progress on his health impovements by writing down his caloric intake and what kind of foods he eats but finds the process mundane and tedious. He wishes for a tool that can help him with making the process more enjoyable and rewarding.</p>
+
+			<p class="quote"><em>“I’ve always struggled eating healither and being fit. I’m determined to take it up to the next level.”</em></p>
+
+			<h3>GOALS</h3>
+	 			<ul>
+	 				<li>Buy comics at physical store if in stock and cheaper.</li>
+	 				<li>Partake in comic-related events when possible.</li>
+	 				<li>Connect with other people at comic store and at 
+	 					comic-related events when possible.</li>
+	 			</ul>
+
+			<h3>FRUSTRATIONS</h3>
+				<ul>
+	 				<li>Keeping track of calories consumed and quality of food eaten.</li>
  					<li>Reducing number of visits to fast food places.</li>
  					<li>Would like to find software that can help him.</li>
- 				</ul>
+	 			</ul>
 
-				<h2 class="persona-hr">FRUSTRATIONS</h2>
-				<ul>
- 					<li>Tracking calories and food quality on phone note.</li>
- 					<li>Struggles to overcome his fast food addiction.</li>
- 					<li>Can’t find the right tool for his cause.</li>
- 				</ul>
+		</div>
 
-			</div>
+		<div class="persona-right">
 
-			<div class="col-md-4 my-2">
+			<img src="images/cc-carl-img.png" class="cs-mobile-persona">
+					
+			<h2>Matthew</h2>
 
-				<img src="images/fs-matthew-img.png" class="cc-mobile-persona img-fluid">
-				
-				<h1 class="test">Matthew</h1>
+			<p class="persona-bio persona-hr lead">28-Year-Old Student</p>
 
-				<p class="persona-bio persona-hr lead">28 Year-Old Freelance Designer</p>
+			<h3>MOTIVATIONS</h3>
+			<p>Matthew follows a popular diet known as the Paleo diet-a diet our ancestors, the Neanderthals, followed. While he enjoys his diet, he doesn’t get much exercise. He tries pushing himself to do more but can’t find something that can keep him motivated. He also wishes for an app that can help tracking caloric intake and exercise amount better than his current app. While the one he uses does work, he complains about how missing a day can create data inconsistencies with diet tracking even when he ate normally like any other day. Matthew hopes he can find what he is looking for so he never has to worry about missing a day of logging due to forgetting or something urgent comes up.</p>
 
-				<h2 class="persona-hr">MOTIVATIONS</h2>
-				<p>Matthew follows a popular diet known as the Paleo diet-a diet our ancestors, the Neanderthals, followed. While he enjoys his diet, he doesn’t get much exercise. He tries pushing himself to do more but can’t find something that can keep him motivated. He also wishes for an app that can help tracking caloric intake and exercise amount better than his current app. While the one he uses does work, he complains about how missing a day can create data inconsistencies with diet tracking even when he ate normally like any other day. Matthew hopes he can find what he is looking for so he never has to worry about missing a day of logging due to forgetting or something urgent comes up.</p>
+			<p class="quote"><em>“I want an app that can make tracking my diet, the Paleo diet, and exercise much more enjoyable.”</em></p>
 
-				<p class="quote"><em>“I want an app that can make tracking my diet, the Paleo diet, and exercise much more enjoyable.”</em></p>
-
-				<h2 class="persona-hr">GOALS</h2>
- 				<ul>
- 					<li>Increasing amount of exercise done per week.</li>
+			<h3>GOALS</h3>
+	 			<ul>
+	 				<li>Increasing amount of exercise done per week.</li>
  					<li>Finding an easier way to track his current diet.</li>
  					<li>Would like to find a better app than the one he uses currently.</li>
- 				</ul>
+	 			</ul>
 
-				<h2 class="persona-hr">FRUSTRATIONS</h2>
+			<h3>FRUSTRATIONS</h3>
 				<ul>
- 					<li>Current app is making diet tracking too frustrating.</li>
+	 				<li>Current app is making diet tracking too frustrating.</li>
  					<li>Trying to find time to exercise and track it.</li>
  					<li>Having to constantly remind himself not to miss a day of tracking his diet.</li>
- 				</ul>
-
-			</div>
-			
+	 			</ul>
 
 		</div>
-			
-			
-<!-- SWOT Analysis -->
+		
+	</section>
 
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3">
-				
-				<h1 class="cs-hr fs-analysis-hr">Competitive Analysis</h1>
+	<!-- Competitive Analysis -->
+	<section id="competitive-analysis" class="main-grid">
 
-			</div>
-			
+		<div class="analysis-intro">
+
+			<h2>Competitive Analysis</h2>
+
+			<p>A few competitors were identified in the making of this project: Myfitnesspal, Fooducate, MyPlate. A SWOT Analysis was conducted to better understand my competition and how FoodSwitch would be positioned. Here's what was gathered:.
+			</p>
 
 		</div>
 
-		<div class="row">
+		<div class="cs-swot">
+					
+					<div class="cs-sw-strengths fs-sw-strengths">
+						<p class="swot-hrs"><strong>Strengths</strong></p>
+						
+						<ul class="p-swot">
+							<li>Large database of food items to access.</li>
+							<li>Well known in the marketplace.</li>
+							<li>Reliable and easy to pull up.</li>
+							<li>Large community support.</li>
+						</ul>
+					</div>
 
-			<div class="col-md-6 offset-md-3 mt-3 mb-1">
-				
-				<p>A few competitors were identified in the making of this project: Myfitnesspal, Fooducate, MyPlate. The survey results showed that 71% of surveyors have interacted with these apps before. Their main positioning, target audience, and differentiators were logged and noted.</p>
+					<div class="cs-sw-weaknesses fs-sw-weaknesses">
+						<p class="swot-hrs swot-hrs-white"><strong>Weaknesses</strong></p>
+						
+						<ul class="p-swot p-swot-white">
+							<li>High over-head costs.</li>
+							<li>Investment issues with stockholders.</li>
+						</ul>
+					</div>
 
-				<p>A SWOT Analysis was conducted to better understand my competition from a big picture perspective. This helped me gain insight into how ComicCrusade would be positioned next to the identified competitors.</p>
+					<div class="cs-sw-opportunities fs-sw-opportunities">
+						<p class="swot-hrs"><strong>Opportunities</strong></p>
+						
+						<ul class="p-swot">
+							<li>Possible sales boosts with kindle readers.</li>
+							<li>Android OS expansion.</li>
+							<li>New business deals in UK and Southeast Asia.</li>
+						</ul>
+					</div>
+
+					<div class="cs-sw-threats fs-sw-threats">
+						<p class="swot-hrs swot-hrs-white"><strong>Threats</strong></p>
+						
+						<ul class="p-swot p-swot-white">
+							<li>Cheap price model.</li>
+							<li>Growing expansion from competitors on mobile devices.</li>
+							<li>Data breaches.</li>
+						</ul>
+					</div>
 
 			</div>
-			
+
+			<div class="swot-p">
+				<p>My main competition was confirmed by my mass online survey. The survey results showed that <strong>71% of surveyors have interacted with these apps before.</strong> </p>
+			</div>
+	</section>
+
+	<!-- User Stories -->
+	<section id="user-stories" class="main-grid">
+		
+		<div class="user-stories">
+
+			<h2>User Stories</h2>
+					
+			<p>User stories were created using Google Spreadsheets to capture all possible wants a user would have (i.e. signing up/in, searching for food item and adding it, adding water and exercise, activating the Switch, trying alternative foods to forecast diet).</p>
+
+			<a href="https://drive.google.com/open?id=1AAhIpTz74V-AlT-U0IYKsratlgD1l_8JoWc6FJhmWTg" class="deliverable-links">Click here to view all user stories.</a>
 
 		</div>
 
-		<div class="row cs-swot">
-			
-			<div class="cs-sw-strengths fs-sw-strengths col-md-4">
+		<img src="images/fs-user-stories-img.png" class="img-fluid stories">
 
-				<p class="swot-hrs"><strong>Positioning</strong></p>
+	</section>
+
+	<!-- User Flows -->
+	<section id="user-flows" class="main-grid">
+
+		<div class="user-flows">
+			
+			<h2>User Flows</h2>
 				
-				<ul class="p-swot">
-					<li>Large database of food items to access.</li>
-					<li>Well known in the marketplace.</li>
-					<li>Reliable and easy to pull up.</li>
-					<li>Large community support.</li>
-				</ul>
+			<p>User flows were crated using draw.io to visually interpret how new and returning users would navigate FoodSwitch. From the homepage to the Switch screen, all steps and possible actions were taken into account.</p>
 
-			</div>
-			<div class="cs-sw-weaknesses fs-sw-weaknesses col-md-4">
-
-				<p class="swot-hrs swot-hrs-white"><strong>Target Audience</strong></p>
-				
-				<ul class="p-swot p-swot-white">
-					<li>25-34 Year-Olds.</li>
-				</ul>
-
-			</div>
-
-			
-			<div class="cs-sw-opportunities fs-sw-opportunities col-md-4">
-
-				<p class="swot-hrs"><strong>Differentiators</strong></p>
-				
-				<ul class="p-swot">
-					<li>Enormous database of food items.</li>
-					<li>Well known in the marketplace of food and dieting apps.</li>
-					<li>Large community support.</li>
-				</ul>
-
-			</div>
-			
-
-
-	    </div>
-
-<!-- User Stories -->
-
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-2">
-				
-				<h1 class="cs-hr">User Stories</h1>
-
-			</div>
-			
+			<a href="https://drive.google.com/open?id=0Bw6eqczNjV2UR1JvOWlKdXVXbm8">Click here to view all user flows.</a>
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 mt-4 mb-1">
-				
-				<p>User stories were created using Google Spreadsheets to capture all possible wants a user would have (i.e. signing up/in, searching for food item and adding it, adding water and exercise, activating the Switch, trying alternative foods to forecast diet)</p>
+		<img src="images/fs-user-flows-img.svg" class="img-fluid flows">
 
-				<a href="https://drive.google.com/open?id=1AAhIpTz74V-AlT-U0IYKsratlgD1l_8JoWc6FJhmWTg">Click here to view all user stories.</a>
+	</section>
 
-			</div>
-			
+	<!-- Wireframes -->
+	<section id="wireframes" class="main-grid">
 
-		</div>
+		<div class="wireframes">
 
-		<div class="row">
-			
-			<div class="col-md-12 my-4">
-				
-				<img src="images/fs-user-stories-img.png" class="img-fluid stories">
+			<h2>Wireframes</h2>
+					
+			<p>Lo-fidelity wireframes of the landing page and main app screens were created using myBalsamiq based on the user flows. High-fidelity and final mockups were created using Adobe Illustrator. All screens were exported to InVision for user testing and GitHub for final presentation.</p>
 
-			</div>
-			
+			<a href="">Click here to view all wireframes.</a>
 
 		</div>
 
-<!-- User Flows -->
+			<!-- First Row -->
+			<div class="cc-sketches">
 
-		<div class="row">
+				<h3>Lo-Fi Landing Page</h3>
 			
-			<div class="col-md-6 offset-md-3 my-2">
-				
-				<h1 class="cs-hr">User Flows</h1>
+				<img src="images/fs-homepage-lo-img.png" class="cc-sketches-img img-fluid">
+
+			</div>
+
+			<div class="cc-wireframe-img1">
+
+				<h3>Hi-Fi Landing Page</h3>
+
+				<img src="images/fs-homepage-hi-img.png" class="cc-wireframe img-fluid">
+
+			</div>
+
+			<div class="cc-wireframe-img2">
+
+				<h3>Finished Landing Page</h3>
+
+				<img src="images/fs-homepage-final-img.png" class="cc-wireframe img-fluid">
+
+			</div>
+
+			<!-- Second Row -->
+			<div class="two-img-a">
+
+				<h3>Lo-Fi Dashboard</h3>
+
+				<img src="images/fs-dashboard-lo-img.png" class="cc-wireframe img-fluid">
+
+			</div>
+
+			<div class="two-img-b">
+
+				<h3>Finished Dashboard</h3>
+
+				<img src="images/fs-dashboard-img.png" class="cc-wireframe img-fluid">
 
 			</div>
 			
+			<!-- Third Row -->
+			<div class="cc-sketches">
+
+				<h3>Sketch of Switch Page</h3>
+			
+				<img src="images/fs-switch-sketch-img.jpg" class="cc-sketches-img img-fluid">
+
+			</div>
+
+			<div class="cc-wireframe-img1">
+
+				<h3>Lo-Fi Switch Page</h3>
+
+				<img src="images/fs-switch-lo-img.png" class="cc-wireframe img-fluid">
+
+			</div>
+
+			<div class="cc-wireframe-img2">
+
+				<h3>Finished Switch Page</h3>
+
+				<img src="images/fs-dashboard-2-img.png" class="cc-wireframe img-fluid">
+
+			</div>
+
+	</section>
+
+	<!-- User Testing -->
+	<section id="user-testing" class="main-grid">
+
+		<div class="testing-intro">
+		
+			<h2>User Testing</h2>
+				
+			<p>I performed user testing by asking my design peers for feedback on usability via an InVision prototype. Throughout the project, all wireframes (from lo-fidelity to final mockups) were tested and later updated based on the feedback provided from peers via Slack channels. Here's what happened:</p>
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 mt-3 mb-1">
+		<div class="challenge">
+
+			<h3>Challenge #1 - Clearer Instructions for Switch Page</h3>
 				
-				<p>User flows were crated using Sitemap.io to visually interpret how new and returning users would navigate FoodSwitch. From the homepage to the Switch screen, all steps and possible actions were taken into account.</p>
-
-				<a href="https://drive.google.com/open?id=0Bw6eqczNjV2UR1JvOWlKdXVXbm8" class="deliverable-links">Click here to view all user flows.</a>
-
-			</div>
-
-
+			<p>In the begining of the user testing, my lo-fidelity prototype was created and sent to peers for testing. The main screen to be tested was the main innovation of the app itself: the Switch page.</p>
 			
+		</div>
+
+		<div class="two-img-a">
+
+			<h3>Lo-Fi Store Locator</h3>
+
+			<img src="images/fs-switch-sketch-img.jpg" class="img-fluid">
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-md-12 my-4">
-				
-				<img src="images/fs-user-flows-img.svg" class="img-fluid flows">
+		<div class="two-img-b">
 
-			</div>
+			<h3>Lo-Fi Store Results</h3>
 
-		</div>
-
-<!-- Wireframes -->
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-2">
-				
-				<h1 class="cs-hr">Wireframes</h1>
-
-			</div>
-			
-
-		</div>
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 mt-3 mb-1">
-				
-				<p>Lo-fidelity wireframes of the landing page, dashboard, and other screens were created using myBalsamiq based on the user flows. High-fidelity and final mockups were created using Adobe Illustrator. All screens were exported to InVision for user testing and GitHub for final presentation.</p>
-
-			</div>
-			
+			<img src="images/fs-switch-lo-img.png" class="img-fluid">
 
 		</div>
 
 
-		<div class="row">
+		<div class="challenge">
 			
-			<div class="col-md-8 offset-md-2 mt-4 mb-2">
-				
-				<img src="images/fs-homepage-lo-img.png" class="cc-sketches-1 img-fluid">
-
-			</div>
-		</div>
-
-		<div class="row">
-
-			<div class="col-md-8 offset-md-2 mt-4 mb-2">
-				
-				<img src="images/fs-homepage-hi-img.png" class="cc-wireframe-img img-fluid">
-
-			</div>
+			<p>From the research gathered, <strong>most of the users found it confusing and frusttrating on how the screen should work.</strong> As a result, changes were made to ease the use of using the screen. Such <strong> changes include simplifying the usability of the screen via the buttons in the middle; adding a dropdown menu for all items to include multiple options for replacement foods; and immediately updating the graph upon selecting a chosen item. </strong></p>
 
 		</div>
 
-		<div class="row">
-			<div class="col-md-8 offset-md-2 mt-4 mb-2">
-				
-				<img src="images/fs-homepage-final-img.png" class="img-fluid">
+		<div class="test-img1">
 
-			</div>
+			<h3>Hi-Fi Switch One Option</h3>
 
-		</div>
-			
-
-<!-- User Testing -->
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-2">
-				
-				<h1 class="cs-hr fs-testing-hr">User Testing</h1>
-
-			</div>
-			
+			<img src="images/fs-switch-on-1.png" class="img-fluid">
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 mt-3 mb-1">
-				
-				<p>I performed user testing by asking my design peers for feedback on usability via an InVision prototype. Throughout the project, all wireframes (from lo-fidelity to final mockups) were tested and later updated based on the feedback provided from peers via Slack channels.</p>
+		<div class="test-img2">
 
-				<p>The lo-fidelity prototype was released and tested to show a rough idea of how users would sign up for FoodSwitch along with interacting with the dashboard and main innovation. Most users reported making the process less tedious and making the main innovation less confusing. Instructions had to be provided to help the user understand how the Switch worked when they should be able to pick it up right away just by looking at it.</p>
+			<h3>Hi-Fi Switch On</h3>
 
-				<p>The final prototype had all of the fixes made based on feedback from users and peers. Positive feedback was given on the final prototype regarding the simplicity of going from one screen to another along with inputting calories and exercise. Users also were glad the Switch was easier to use and understand. It now uses radio buttons to select the alternative foods with a live updated line graph that changes every time a new alternative food item has been selected.</p>
-
-			</div>
-			
+			<img src="images/fs-switch-on.png" class="img-fluid">
 
 		</div>
 
-<!-- Prototype -->
+		<div class="test-img3">
 
+			<h3>Hi-Fi Switch Off</h3>
 
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-2">
-				
-				<h1 class="cs-hr">Prototype</h1>
-
-			</div>
-			
+			<img src="images/fs-switch-off.png" class="img-fluid">
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-3">
+		<div class="challenge">
+
+			<h3>Challenge #2 - Remodeling the Dashboard</h3>
 				
-				<p>I used InVision to create a clickable prototype for surveying and testing potential users for feedback</p>
-
-				<a href="https://invis.io/HEE9VK1F9" class="deliverable-links">Checkout the prototype here.</a>
-
-			</div>
-
+			<p>The dashboard for FoodSwitch was tested to see how users would respond from using its functions.</p>
 			
+		</div>
+
+		<div class="two-img-a">
+
+			<h3>Lo-Fi Dashboard 1</h3>
+
+			<img src="images/fs-dashboard-lo-img.png" class="img-fluid">
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-md-8 offset-md-2 mt-3 mb-1">
-				
-				<img src="images/fs-prototype-img.png" class="fs-prototype-img img-fluid">
+		<div class="two-img-b">
 
-			</div>
-			
+			<h3>Lo-Fi Dashboard 2</h3>
+
+			<img src="images/fs-dashboard-lo-img2.png" class="img-fluid">
 
 		</div>
 
-<!-- Conclusion -->
-
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 my-2">
+		<div class="challenge">
 				
-				<h1 class="cs-hr fs-hr-conclusion">Conclusion</h1>
-
-			</div>
+			<p>From testing, <strong>most users found it confusing to use and where overwhlemed by the multiple icons and buttons on the screen.</strong> Therefore, a total remodeling of the dashboard was done. <strong>The interface was cleaned; the use of color made more sense; the display of the Switch graph was brought to the dashboard page; and users can easily read how their overall health is based on what they have eaten.</strong></p>
 			
+		</div>
+
+		<div class="two-img-a">
+
+			<h3>Final Dashboard A</h3>
+
+			<img src="images/fs-dashboard-img.png" class="img-fluid">
 
 		</div>
 
-		<div class="row">
-			
-			<div class="col-md-6 offset-md-3 mb-4">
-				
-				<p class="fs-p-conclusion">This project gave me big insight into how a product or service is marketed to potential users. From innovative features to pricing; testimonials; and more. Such knowledge will serve me well in the future.
+		<div class="two-img-b">
 
-				<h2 class="cs-hr">Lessons Learned</h2>
+			<h3>Final Dashboard B</h3>
 
-				<p><strong>It’s about the client’s clients, not me or the client.</strong> The customer is the one who’s going to interact with the product/service. By tailoring it to their needs and expectations, you’ll bring in more business. In testing, you’ll discover interesting trends and mindsets of users you never could’ve imagine (ex: What if I want to forecast foods with suggestions instead of a static list of healthy foods?). This feedback alone will make a better product.</p>
-
-				<p><strong>You are going to jump back and forth quite a bit during project progression.</strong> A lot of hopping was done with managing the aspects of the project. From the user testing to the visual design, development, prototyping, etc. There is no formulaic way of conducting a UX project like this. Even so, it did grant me fulfillment. I was able to do something different almost every day which eliminated mundanity of the job.</p>
-
-				<p><strong>Always remember you main innovation.</strong> It’s really easy to get lost in the weeds with trying to handle other main aspects of the project and forget what your project is all about regarding its main differentiator(s). That’s why it's imperative to go back and remeber the main objective frequently.</p>
-
-				<p><strong>Feedback is the key to building a better product.</strong> This is the truth to everything regarding projects. Feedback helped me find all kinds of errors, flaws, bugs, and glitches that I could not have found by myself. Like a gem, a project must be polished until it gleams with purity. Only then will it show its true value to others.</p>
-
-			</div>
-			
+			<img src="images/fs-dashboard-2-img.png" class="img-fluid">
 
 		</div>
 
-	</div>
+	</section>
 
+	<!-- Prototype -->
+	<section id="prototype" class="main-grid">
 
-<!--Footer-->
-<footer class="page-footer bg-dark center-on-small-only pt-0">
+		<div class="prototype">
 
-    <!--Footer Links-->
-    <div class="container" id="contact-footer">
+			<h2>Prototype</h2>
+				
+			<p>I used InVision to create a clickable prototype for surveying and testing potential users for feedback</p>
 
+			<a href="https://invis.io/HEE9VK1F9" class="deliverable-links">Checkout the prototype here.</a>
 
-        <!--Grid row-->
+		</div>
 
-        <hr class="rgba-white-light" style="margin: 0 15%;">
+	</section>
 
-        <!--Grid row-->
-        <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+	<!-- Conclusion -->
+	<section id="conclusion" class="cs-conclusion main-grid">
 
-            <!--Grid column-->
-            <div class="col-md-8 col-12 mt-5 text-white">
-                <h2 style="line-height: 1.7rem">Connect</h2>
+		<div class="conclusion">
 
-            </div>
-            <!--Grid column-->
+			<h2>Conclusion</h2>
+				
+			<p>This project gave me big insight into how a product or service is marketed to potential users. From innovative features to pricing; testimonials; and more. Such knowledge will serve me well in the future.</p>
 
-        </div>
-        <!--Grid row-->
+			<h2 class="cs-hr">Lessons Learned</h2>
 
-        <!--Grid row-->
-        <div class="row">
+			<p><strong>It’s about the client’s clients, not me or the client.</strong> The customer is the one who’s going to interact with the product/service. By tailoring it to their needs and expectations, you’ll bring in more business. In testing, you’ll discover interesting trends and mindsets of users you never could’ve imagine (ex: What if I want to forecast foods with suggestions instead of a static list of healthy foods?). This feedback alone will make a better product.</p>
 
-            <!--Grid column-->
+			<p><strong>You are going to jump back and forth quite a bit during project progression.</strong> A lot of hopping was done with managing the aspects of the project. From the user testing to the visual design, development, prototyping, etc. There is no formulaic way of conducting a UX project like this. Even so, it did grant me fulfillment. I was able to do something different almost every day which eliminated mundanity of the job.</p>
 
-            <div class="col-2 col-md-4"></div>
-            <div class="col-8 col-md-4">
+			<p><strong>Feedback is the key to building a better product.</strong> This is the truth to everything regarding projects. Feedback helped me find all kinds of errors, flaws, bugs, and glitches that I could not have found by myself. Like a gem, a project must be polished until it gleams with purity. Only then will it show its true value to others.</p>
 
-                <div class="footer-socials mb-4">
-                    <!--Email-->
-                    <a class="email" href="mailto:Aidan_Herlong@alumni.baylor.edu"><img src="images/email-icon.png"/></a>
-                    <!--LI-->
-                    <a class="linked-in" href="https://www.linkedin.com/in/aidanherlong/"><img src="images/linkedin-icon.png"/></a>
-                    <!--GH-->
-                    <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png"/></a>
-                </div>
-            </div>
-            <div class="col-2 col-md-4"></div>
-            <!--Grid column-->
-        </div>
-        <!--Grid row-->
+		</div>
 
-    </div>
+	</section>
 
-    <!--Copyright-->
-    <div class="footer-copyright text-center text-white pb-1">
-        <div class="container-fluid">
-           <p class="copyright">© 2018 Aidan D. Herlong</p>
-        </div>
-    </div>
-    
+<!-- Footer -->
 
-</footer>
+	<footer id="contact-footer" class="my-footer">
+		
+		<p class="copyright">Copyright © 2018 Aidan D. Herlong</p>
 
+		<div class="footer-links">
+          <!--Email-->
+          <a class="email" href="mailto:Aidan_Herlong@alumni.baylor.edu"><img src="images/email-icon.png"/></a>
+          <!--LI-->
+          <a class="linked-in" href="https://www.linkedin.com/in/aidanherlong/"><img src="images/linkedin-icon.png"/></a>
+          <!--GH-->
+          <a class="github" href="https://github.com/AidanH56"><img src="images/github-icon.png"/></a>
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="js/bootstrap.min.js.map"></script>
+		</div>
 
+	</footer>
 
+<!-- Javascript -->
+
+	<script src="js/style.js"></script>
 
 </body>
-
-
-</html>

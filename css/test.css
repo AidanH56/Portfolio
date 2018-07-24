@@ -45,6 +45,7 @@
 		font-style: italic;
 	}
 
+
 /* FOOTER */
 
 	.my-footer {
@@ -52,6 +53,7 @@
 		display: flex;
 		justify-content: space-between;
 		text-align: center;
+		margin-top: 48px;
 	}
 
 	.copyright {
@@ -202,6 +204,66 @@
 		grid-row-gap: 36px;
 	}
 
+/* HOMEPAGE */
+
+	.main-hero {
+		background-color: #fefefe;
+	}
+
+	.avatar {
+		grid-column-start: 6;
+		grid-column-end: span 3;
+		margin-top: 230px;
+		margin-bottom: 60px;
+		margin-left: 86px;
+		height: auto;
+		display: block;
+		width: 70%;
+	}
+
+	.case-studies {
+		background-color: #d32f53; 
+		margin-top: 32px;
+	}
+
+	.cc-app {
+		grid-column-start: 2;
+		grid-column-end: span 3;
+	}
+
+	.cc-case, .cc-app {
+		margin-top: 72px;
+	}
+
+	.fs-case, .fs-app {
+		margin-top: 48px;
+		margin-bottom: 48px;
+	}
+
+	.cc-case, .fs-case {
+		width: 85%;
+	}
+
+	.cc-case {
+		grid-column-start: 5;
+		grid-column-end: span 3;  
+	}
+
+	.fs-app {
+		grid-column-start: 5;
+		grid-column-end: span 3;
+	}
+
+	.cc-app, .fs-app {
+		width: 85%;
+		display: block;
+	}
+
+	.fs-case {
+		grid-column-start: 2;
+		grid-column-end: span 3;
+	}
+
 /* ABOUT ME PAGE */
 
 	.about-hero {
@@ -234,10 +296,6 @@
 
 	.main, .skills-tools, .connect, .test-img, .about-me {
 		grid-area: content;
-	}
-
-	.test-img {
-		margin-top: 5.5em;
 	}
 
 	.main {
@@ -281,17 +339,15 @@
 		box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
 	}
 
-	.cs-hero-container {
-		
-	}
-
 	.cs-hero-hr, .cs-hero-p {
 		color: #333333;
 	}
 
+	.cs-hero-w {
+		color: #ffffff;
+	}
+
 	.button {
-	    border: 2px solid #333333;
-	    color: #333333;
 	    padding: 12px 32px;
 	    text-align: center;
 	    text-decoration: none;
@@ -299,6 +355,16 @@
 	    margin: 4px 2px;
 	    cursor: pointer;
 	    transition-duration: 0.4s;
+	}
+
+	.button-b {
+		border: 2px solid #333333;
+	    color: #333333;
+	}
+
+	.button-w {
+		border: 2px solid #ffffff;
+	    color: #ffffff;
 	}
 
 	.button:hover {
@@ -330,6 +396,19 @@
 		display: none;
 	}
 
+	.intro {
+		margin-top: 16px;
+	}
+
+	.quote {
+		border-left: 4px solid;
+		padding: 0 4%;
+		margin-top: 24px;
+		margin-left: 4%;
+		font-size: 1.1rem;
+		color: #9BA0B3;
+	}
+
 /* COMICCRUSADE PAGE */
 	.cc-hero {
 		background-image: url('../images/cc-hero-bg-img.png');
@@ -338,7 +417,7 @@
 	.cc-hero-img {
 		grid-column-start: 7;
 		margin-top: 120px;
-		margin-bottom: 32px;
+		margin-bottom: 48px;
 		height: auto;
 		display: block;
 		width: 93%;
@@ -360,6 +439,10 @@
 		margin-left: 4%;
 		margin-top: 170px;
 		margin-bottom: 32px;
+	}
+
+	.flows {
+		margin-left: 48px;
 	}
 
 	.user-research, .research-conclusion, .personas, .analysis-intro, 
@@ -397,7 +480,7 @@
 		grid-column-end: span 3;
 	}
 
-	.intro, .cc-prototype-img, .cs-hero-container {
+	.intro, .cs-hero-container, .cc-prototype-img, .fs-hero-img {
 		grid-column-end: span 4;
 	}
 
@@ -407,7 +490,11 @@
 		grid-column-end: span 6;
 	}
 
-	.stories, .flows {
+	.flows {
+		grid-column-end: span 7;
+	}
+
+	.stories {
 		grid-column-end: span 8;
 	}
 
@@ -415,16 +502,26 @@
 		margin-bottom: 32px;
 	}
 
+	.ur-point-2, .ur-point-4 {
+		margin-left: 15%;
+	}
+
 	.ur-point-3 {
 		margin-right: 16px;
 	}
 
-	.persona-left, .persona-1, .test-img1 {
+	.persona-left, .persona-1 {
 		margin-left: 11%;
 	}
 
-	.test-img3 {
-		margin-left: -9%;
+	.test-img1, .cc-sketches {
+		margin-left: 25%;
+		margin-right: -25%;
+	}
+
+	.test-img3, .cc-wireframe-img2 {
+		margin-left: -25%;
+		margin-right: 25%;
 	}
 
 	.persona-left {
@@ -479,6 +576,37 @@
 		background-color: #9b532c;
 	}
 
+/* FOODSWITCH PAGE */
+
+	.fs-hero {
+		background-image: url('../images/fs-hero-bg-img.png')
+	}
+
+	.fs-hero-img {
+		grid-column-start: 5;
+		margin-top: 170px;
+		margin-bottom: 60px;
+		height: auto;
+		display: block;
+		width: 100%;
+	}
+
+	.fs-sw-strengths {
+		background-color: #00aab2;
+	}
+
+	.fs-sw-weaknesses {
+		background-color: #0f7c79;
+	}
+
+	.fs-sw-opportunities {
+		background-color: #16c1c1;
+	}
+
+	.fs-sw-threats {
+		background-color: #079393;
+	}
+
 /* MEDIA QUERIES */
 
 	@media screen and (max-width: 320px) {
@@ -516,7 +644,7 @@
 			margin-left: 9%;
 		}
 
-		.logo-hr, .cc-hero-img, .flows {
+		.logo-hr, .cc-hero-img, .fs-hero-img, .flows {
 			display: none;
 		}
 
@@ -629,6 +757,13 @@
 			grid-column-end: span 3;
 			width: 83%;
 		}
+
+		/* FOODSWITCH PAGE */
+		.fs-hero-img {
+			grid-column-start: 6;
+			grid-column-end: span 3;
+			width: 83%;
+		}
 	}
 
 	@media screen and (min-width: 320px) {
@@ -718,6 +853,11 @@
 		.connect {
 			grid-template-columns: 350px auto 350px;
 		}
+
+		.cs-hero-container {
+			margin-top: 220px;
+			width: 80%;
+		}
 	}
 
 	@media screen and (min-width: 1242px) {
@@ -729,5 +869,12 @@
 	@media screen and (min-width: 1269px) {
 		.connect {
 			grid-template-columns: auto 400px auto;
+		}
+	
+
+	@media screen and (min-width: 1400px) {
+		.cs-hero-container {
+			margin-top: 270px;
+			width: 65%;
 		}
 	}
