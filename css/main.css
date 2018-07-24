@@ -220,7 +220,7 @@
 	}
 
 	.case-studies {
-		background-color: #d32f53; 
+		background-color: #d3d3d3; 
 		margin-top: 32px;
 	}
 
@@ -258,10 +258,6 @@
 	.cc-case, .fs-app {
 		margin-left: 40px;
 	}
-
-/*	.cc-app, .fs-case {
-		margin-left: 24px;
-	} */
 
 	.fs-case {
 		grid-column-start: 2;
@@ -864,9 +860,25 @@
 		.skills, .tools {
 			float: none;
 		}
+
+		.cc-app, .fs-app, .cc-case, .fs-case {
+			grid-column-start: 1;
+			grid-column-end: span 6;
+			margin-left: 24px;
+		}
+
+		.cc-case, .fs-case {
+			margin-top: 16px;
+			width: 100%;
+		}
+
+		.fs-app {
+			margin-top: 16px;
+		}
 	}
 
 	@media screen and (min-width: 535px) {
+		
 		.main-content, .connect {
 			grid-template-columns: 50px auto 50px;
 		}
@@ -895,6 +907,46 @@
 
 		.connect {
 			grid-template-columns: 200px auto 200px;
+		}
+
+		.cc-app, .fs-case {
+			grid-column-start: 1;
+			grid-column-end: span 3;
+		}
+
+		.cc-app {
+			margin-top: 72px;
+		}
+
+		.fs-case, .fs-app {
+			margin-top: 48px;
+			margin-bottom: 48px;
+		}
+
+		.cc-case, .fs-case {
+			width: 85%;
+		}
+
+		.cc-case, .fs-app {
+			grid-column-start: 5;
+			grid-column-end: span 3;  
+		}
+
+		.fs-app {
+			margin-top: 69px;
+		}
+
+		.cc-app, .fs-app {
+			width: 100%;
+			display: block;
+		}
+
+		.cc-case, .fs-app {
+			margin-left: 40px;
+		}
+
+		.cc-case, .fs-case {
+			margin-top: 90px;
 		}
 	}
 
@@ -927,6 +979,23 @@
 		}
 	}
 
+	@media screen and (min-width: 1024px) {
+
+		.cc-app, .fs-case {
+			grid-column-start: 2;
+			margin-left: 0px;
+		}
+
+		.cc-app, .fs-app {
+			width: 94%;
+		}
+
+		.cc-case {
+			margin-top: 75px;
+		}
+
+	}
+
 	@media screen and (min-width: 1056px) {
 		.connect {
 			grid-template-columns: 300px auto 300px;
@@ -936,6 +1005,14 @@
 	@media screen and (min-width: 1145px) {
 		.main-content {
 			grid-template-columns: 290px auto 290px;
+		}
+
+		.cc-case {
+			margin-top: 100px;
+		}
+
+		.fs-case {
+			margin-top: 105px;
 		}
 	}
 
@@ -962,9 +1039,27 @@
 		}
 	
 
+	@media screen and (min-width: 1280px) {
+
+		.cc-case, .fs-case {
+			margin-top: 140px;
+		}
+
+	}
+
 	@media screen and (min-width: 1400px) {
 		.cs-hero-container {
 			margin-top: 270px;
 			width: 65%;
+		}
+
+		.cc-case, .fs-case {
+			margin-top: 160px;
+		}
+	
+
+	@media screen and (min-width: 1440px) {
+		.cc-case, .fs-case {
+			margin-top: 180px;
 		}
 	}
