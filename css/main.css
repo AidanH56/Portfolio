@@ -25,6 +25,10 @@
 		font-size: 40px;
 		font-weight: 900;
 		color: #212529;
+		margin-bottom: 0;
+		padding-top: 50px;
+		border-top: 10px solid #dadada;
+		margin-top: 50px;
 	}
 
 	h3 {
@@ -34,9 +38,11 @@
 	}
 
 	p {
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: 400;
 		color: #212529;
+		margin-top: 1rem;
+		margin-bottom: 25px;
 
 	}
 
@@ -80,6 +86,14 @@
   		width: 100%;
   		justify-content: space-between;
 	}
+
+    .logo-container {
+        margin-left: 70px;
+    }
+
+    .navbar{
+        margin-right: 70px;
+    }
 
 	.menu-toggle {
 		margin-right: 24px;
@@ -197,9 +211,11 @@
 
 	.main-grid {
 		display: grid;
-		grid-template-columns: repeat(10, 12.5%);
+        grid-template-columns: repeat(12, 8.5%);
+		/*grid-template-columns: repeat(10, 12.5%);*/
 		grid-template-rows: auto;
-		grid-row-gap: 36px;
+        grid-gap: 16px;
+		/*grid-row-gap: 36px;*/
 	}
 
 /* HOMEPAGE */
@@ -396,17 +412,12 @@
 		display: inline-block;
 	}
 
-	.persona-2 {
-		margin-left: 26px;
-
-	}
-
 	.cs-mobile-persona {
 		display: none;
 	}
 
-	.intro {
-		margin-top: 16px;
+	.persona-hr {
+		font-size: 32px;
 	}
 
 	.persona-info {
@@ -427,9 +438,34 @@
 		margin-bottom: 48px;
 	}
 
+	.motivations-hr, .goals-hr, .frustrations-hr {
+		letter-spacing: 3px;
+		font-weight: 100;
+		font-size: 16px;
+		border-bottom: 1px solid #dadada;
+		padding-bottom: 10px;
+	}
+	.wireframe-hr {
+		font-size: 21px;
+		margin-top: 0;
+	}
+
 /* COMICCRUSADE PAGE */
 	.cc-hero {
-		background-image: url('../images/cc-hero-bg-img.png');
+		background: linear-gradient(to bottom left, #ff8600, #e07307);
+	}
+
+	.cc-hero-1, .cc-hero-2 {
+		margin-top: 110px;
+		grid-column-end: span 2;
+	}
+
+	.cc-hero-1 {
+		grid-column-start: 7;
+	}
+
+	.cc-hero-2 {
+		grid-column-start: 9;
 	}
 
 	.cc-hero-img {
@@ -445,57 +481,73 @@
 		display: none;
 	}
 
-	.intro, .cc-prototype-img {
+	.intro {
+		grid-column-start: 4;
+		grid-column-end: span 5;
+		margin-top: 16px;
+		margin-left: 12px;
+		margin-right: 48px;
+	}
+
+	.ur-point-1, .ur-point-3, .cc-prototype-img {
 		grid-column-start: 3;
 	}
 
-	.cs-hero-container, .stories, .flows, .cc-sketches, .test-img1 {
+	.stories, .flows, .cc-sketches, .test-img1 {
 		grid-column-start: 1;
 	}
 
 	.cs-hero-container {
-		margin-left: 4%;
+		grid-column-start: 2;
 		margin-top: 170px;
 		margin-bottom: 32px;
+		padding-bottom: 32px;
 	}
 
 	.flows {
 		margin-left: 48px;
+		margin-top: 36px;
+		grid-column-end: span 9;
 	}
 
 	.user-research, .research-conclusion, .personas, .analysis-intro, 
 		.cs-swot, .swot-p, .user-stories, .user-flows, .wireframes, 
 		.testing-intro, .challenge, .prototype, .conclusion {
-		grid-column-start: 2;
+		/*grid-column-start: 2;
 		margin-left: 11%;
-		margin-right: 9%;
+		margin-right: 9%;*/
+		grid-column-start: 3;
+		margin-left: 18px;
 	}
 
-	.ur-point-1, .ur-point-3, .persona-1, .persona-left, .two-img-a {
+	.persona-left, .two-img-a {
 		grid-column-start: 2; 
 	}
 
 	.cc-wireframe-img1, .test-img2 {
 		grid-column-start: 4;
-		grid-column-end: 6;
+		grid-column-end: 7;
+		margin-left: 28px;
+		margin-bottom: 50px;
 	}
 
 	.cc-wireframe-img2, .test-img3 {
 		grid-column-start: 7;
-		grid-column-end: 9;
+		grid-column-end: span 3;
+		margin-left: 28px;
 	}
 
-	.ur-point-2, .ur-point-4, .persona-right, .persona-2 {
-		grid-column-start: 5;
-	}
-
-	.two-img-b {
+	.persona-right {
 		grid-column-start: 6;
 	}
 
-	.cc-hero-img, .persona-right, .cc-sketches, .test-img1, .two-img-a,
+	.ur-point-2, .ur-point-4, .two-img-b {
+		grid-column-start: 6;
+	}
+
+	.cc-hero-img, .cc-sketches, .test-img1, .two-img-a,
 		.two-img-b {
-		grid-column-end: span 2;
+		grid-column-end: span 3;
 	}
 
 	.ur-point-1, .ur-point-2, .ur-point-3, .ur-point-4, .persona-left, 
@@ -503,7 +555,7 @@
 		grid-column-end: span 3;
 	}
 
-	.intro, .cs-hero-container, .cc-prototype-img, .fs-hero-img {
+	.cs-hero-container, .cc-prototype-img, .fs-hero-img {
 		grid-column-end: span 4;
 	}
 
@@ -513,12 +565,8 @@
 		grid-column-end: span 6;
 	}
 
-	.flows {
-		grid-column-end: span 7;
-	}
-
 	.stories {
-		grid-column-end: span 8;
+		grid-column-end: span 10;
 	}
 
 	.ur-point-3, .ur-point-4 {
@@ -526,30 +574,25 @@
 	}
 
 	.ur-point-2, .ur-point-4 {
-		margin-left: 15%;
+		margin-left: 36px;
 	}
 
 	.ur-point-1, .ur-point-3 {
 		margin-right: 32px;
 	}
 
-	.persona-left, .persona-1 {
-		margin-left: 11%;
-	}
-
 	.test-img1, .cc-sketches {
-		margin-left: 25%;
-		margin-right: -25%;
+		margin-left: 76px;
+		/*margin-right: -25%;*/
 	}
 
-	.test-img3, .cc-wireframe-img2 {
+	/*.test-img3, .cc-wireframe-img2 {
 		margin-left: -25%;
 		margin-right: 25%;
-	}
+	}*/
 
 	.persona-left {
 		/*float: left;*/
-		margin-right: 48px;
 	}
 
 	.persona-right {
@@ -602,7 +645,7 @@
 /* FOODSWITCH PAGE */
 
 	.fs-hero {
-		background-image: url('../images/fs-hero-bg-img.png')
+		background: linear-gradient(to bottom left, #00aab2, #079393);
 	}
 
 	.fs-hero-img {
@@ -682,7 +725,6 @@
 		}
 
 		figcaption {
-			font-size: 18px;
 			margin-bottom: 10px;
 		}
 
@@ -808,19 +850,19 @@
 			float: none;
 		}
 
-		.user-research, .research-conclusion, .personas, .persona-1,
+		.user-research, .research-conclusion, .personas,
 		 .persona-left, .persona-right, .analysis-intro, .cs-swot, .swot-p, 
 		 .user-stories, .user-flows, .wireframes, .testing-intro, .challenge,
 		 .prototype, .conclusion, .intro {
 			grid-column-start: 1;
-			margin-left: 4%;
+			margin-left: 24px;
 		}
 
 		.intro, .user-research, .research-conclusion, .personas, .persona-left, 
 		.persona-right, .analysis-intro, .cs-swot, .swot-p, .user-stories, 
 		.user-flows, .wireframes, .testing-intro, .challenge, .prototype, .conclusion {
 			grid-column-end: span 8;
-			margin-right: 5%;
+			margin-right: 28px;
 		}
 	}
 
@@ -835,6 +877,14 @@
 
 		h3 {
 			font-size: 24px;
+		}
+
+		.logo-container {
+			margin-left: 0;
+		}
+
+		.navbar {
+			margin-right: 0;
 		}
 
 		/* MAIN PAGE */
@@ -1031,7 +1081,6 @@
 		}
 
 		.cs-hero-container {
-			margin-top: 220px;
 			width: 80%;
 		}
 	}
