@@ -453,6 +453,7 @@
 /* COMICCRUSADE PAGE */
 	.cc-hero {
 		background: linear-gradient(to bottom left, #ff8600, #e07307);
+		padding-bottom: 60px;
 	}
 
 	.cc-hero-1, .cc-hero-2 {
@@ -502,7 +503,8 @@
 	}
 
 	.cs-hero-container {
-		grid-column-start: 2;
+		grid-column-start: 3;
+		grid-column-end: 8;
 		margin-top: 170px;
 		margin-bottom: 32px;
 		padding-bottom: 32px;
@@ -514,14 +516,23 @@
 		grid-column-end: span 13;
 	}
 
+	.cs-swot {
+		grid-column-start: 5;
+		grid-column-end: 13;
+	}
+
 	.user-research, .research-conclusion, .personas, .analysis-intro, 
-		.cs-swot, .swot-p, .user-stories, .user-flows, .wireframes, 
+		.swot-p, .user-stories, .user-flows, .wireframes, 
 		.testing-intro, .challenge, .prototype, .conclusion {
 		/*grid-column-start: 2;
 		margin-left: 11%;
 		margin-right: 9%;*/
 		grid-column-start: 4;
 		/* margin-left: 18px; */
+	}
+
+	.user-stories, .wireframes {
+		margin-bottom: 36px;
 	}
 
 	.persona-left, .two-img-a {
@@ -559,12 +570,12 @@
 		grid-column-end: span 4;
 	}
 
-	.cs-hero-container, .cc-prototype-img, .fs-hero-img {
+	.cc-prototype-img, .fs-hero-img {
 		grid-column-end: span 4;
 	}
 
 	.user-research, .research-conclusion, .personas,
-	 .analysis-intro, .cs-swot, .swot-p, .user-stories, .user-flows, 
+	 .analysis-intro, .swot-p, .user-stories, .user-flows, 
 	 .wireframes, .testing-intro, .challenge,.prototype, .conclusion {
 		grid-column-end: span 10;
 	}
@@ -577,33 +588,6 @@
 		margin-bottom: 32px;
 	}
 
-	.ur-point-2, .ur-point-4 {
-		/* margin-left: 36px; */
-	}
-
-	.ur-point-1, .ur-point-3 {
-		/* margin-right: 32px; */
-	}
-
-	.test-img1, .cc-sketches {
-		/* margin-left: 76px; */
-		/*margin-right: -25%;*/
-	}
-
-	/*.test-img3, .cc-wireframe-img2 {
-		margin-left: -25%;
-		margin-right: 25%;
-	}*/
-
-	.persona-left {
-		/*float: left;*/
-	}
-
-	.persona-right {
-		/*float: right;*/
-		/* margin-left: 24px; */
-	}
-
 	.intro-container {
 		margin-top: 16px;
 	} 
@@ -612,8 +596,10 @@
 		display: grid;
 		max-width: 1000px;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		grid-gap: 10px;
+		/*grid-template-rows: 1fr 1fr;*/
+		grid-template-rows: 1fr;
+		/*grid-gap: 10px;*/
+		grid-gap: 7px;
 		background-color: #616161;
 		border: 10px solid #616161;
 	}
@@ -631,21 +617,21 @@
 		color: #dfdee0;
 	}
 
-	.cc-sw-strengths {
+	.cc-sw-strengths, .cc-sw-weaknesses, .cc-sw-opportunities, .cc-sw-threats {
 		background-color: #f88337;
 	}
 
-	.cc-sw-weaknesses {
+	/*.cc-sw-weaknesses {
 		background-color: #c6622a;
 	}
 
 	.cc-sw-opportunities {
-		background-color: #f4be84;
+		background-color: #FF9C5C;
 	}
 
 	.cc-sw-threats {
-		background-color: #9b532c;
-	}
+		background-color: #DF600D;
+	}*/
 
 /* FOODSWITCH PAGE */
 
@@ -707,7 +693,7 @@
 	@media screen and (max-width: 320px) {
 
 		.cs-hero {
-			width: 114%;
+			
 		}
 	}
 
@@ -735,26 +721,20 @@
 
 		.cs-hero-container {
 			text-align: center;
-			margin-left: 9%;
+			grid-column-end: 15;
+		}
+
+		.cc-hero-1, .cc-hero-2 {
+			display: none;
 		}
 
 		.logo-hr, .cc-hero-img, .fs-hero-img, .flows {
 			display: none;
 		}
 
-		.cc-mobile-hero {
+		/*.cc-mobile-hero {
 			display: block;
-		}
-
-		.cc-mobile-hero {
-			grid-column-start: 3;
-			grid-column-end: span 7;
-			width: 50%;
-		}
-
-		.cs-hero-container {
-			grid-column-end: span 7;
-		}
+		}*/
 
 		.cc-sketches, .cc-wireframe-img1, .cc-wireframe-img2, .two-img-a, 
 			.two-img-b, .test-img1, .test-img2, .test-img3 {
@@ -847,27 +827,25 @@
 			display: none;
 		}
 
-		.cs-mobile-persona {
-			display: inline-block;
-		}
-
-		.persona-1, .persona-left, .persona-right {
-			float: none;
-		}
-
 		.user-research, .research-conclusion, .personas,
 		 .persona-left, .persona-right, .analysis-intro, .cs-swot, .swot-p, 
 		 .user-stories, .user-flows, .wireframes, .testing-intro, .challenge,
-		 .prototype, .conclusion, .intro {
-			grid-column-start: 1;
-			margin-left: 24px;
+		 .prototype, .conclusion, .intro, .ur-point-1, .ur-point-3 {
+			grid-column-start: 2;
+		}
+
+		.ur-point-2, .ur-point-4 {
+			grid-column-start: 11;
 		}
 
 		.intro, .user-research, .research-conclusion, .personas, .persona-left, 
 		.persona-right, .analysis-intro, .cs-swot, .swot-p, .user-stories, 
 		.user-flows, .wireframes, .testing-intro, .challenge, .prototype, .conclusion {
-			grid-column-end: span 8;
-			margin-right: 28px;
+			grid-column-end: span 14;
+		}
+
+		.ur-point-1, .ur-point-3 {
+			grid-column-end: span 5;
 		}
 	}
 
