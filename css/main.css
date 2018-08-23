@@ -692,6 +692,28 @@
 
 /* MEDIA QUERIES */
 
+ 	@media screen and (min-width: 1024px) {
+ 		.fs-app {
+			grid-column-start: 10;
+		}
+ 	}
+
+	@media screen and (min-width: 1224px) {
+
+		.cc-app, .fs-app {
+			width: 414px;
+			height: 412px;
+		}
+	}
+
+
+ 	@media screen and (min-width: 1326px) {
+ 		.cc-app, .fs-app {
+			width: 474px;
+			height: 472px;
+		}
+ 	}
+
 	@media screen and (max-width: 320px) {
 
 		.cs-hero {
@@ -707,7 +729,6 @@
 		.mobile-avatar {
 			display: block;
 		}
-
 
 		.avatar {
 			display: none;
