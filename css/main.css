@@ -873,6 +873,35 @@
 		}
 	}
 
+	@media screen and (max-width: 868px) {
+		/* COMICCRUSADE PAGE */
+		.cc-hero-img {
+			grid-column-start: 6;
+			grid-column-end: span 3;
+			width: 83%;
+		}
+
+		/* FOODSWITCH PAGE */
+		.fs-hero-img {
+			grid-column-start: 6;
+			grid-column-end: span 3;
+			width: 83%;
+		}
+
+		.cc-app, .fs-app {
+			width: 314px;
+			height: 312px;
+		}
+
+		.fs-case {
+			margin-top: 0;
+		}
+
+		/*.cc-case, .fs-app {
+			grid-column-start: 3;
+		}*/
+	}
+
 	@media screen and (max-width: 660px) {
 		
 		/* Make hamburger menu appear at this screen width or lower*/
@@ -895,8 +924,17 @@
 		}
 
 		/*HOME PAGE*/
-		.cs-hero-container, .cc-case, .fs-app {
+		.cs-hero-container {
 			grid-column-start: 2;
+		}
+
+		.cc-case, .fs-case, .cc-app, .fs-app {
+			grid-column-start: 4;
+		}
+
+		.cc-app, .fs-app {
+			width: 404px;
+			height: 402px;
 		}
 
 		.case-study-hr {
@@ -936,36 +974,6 @@
 			grid-column-end: span 3;
 		}*/
 
-	}
-
-
-	@media screen and (max-width: 868px) {
-		/* COMICCRUSADE PAGE */
-		.cc-hero-img {
-			grid-column-start: 6;
-			grid-column-end: span 3;
-			width: 83%;
-		}
-
-		/* FOODSWITCH PAGE */
-		.fs-hero-img {
-			grid-column-start: 6;
-			grid-column-end: span 3;
-			width: 83%;
-		}
-
-		.cc-app, .fs-app {
-			width: 314px;
-			height: 312px;
-		}
-
-		.fs-case {
-			margin-top: 0;
-		}
-
-		/*.cc-case, .fs-app {
-			grid-column-start: 3;
-		}*/
 	}
 
 	@media screen and (max-width: 353px) {
@@ -1013,8 +1021,15 @@
 			display: none;
 		}
 
-		.logo-hr, .cc-hero-img, .fs-hero-img, .flows {
+		/*PUT LOGO-HR HERE AFTER FIXING LOGO!*/
+		.cc-hero-img, .fs-hero-img, .flows {
 			display: none;
+		}
+
+		/*REMOVE THIS CODE AFTER FIXING LOGO!*/
+		.logo-hr {
+			line-height: 20px;
+			margin-left: 0;
 		}
 
 		.cc-case, .fs-case {
