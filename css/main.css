@@ -90,7 +90,7 @@
 	}
 
     .logo-container {
-        margin-left: 70px;
+        /* margin-left: 70px; */
     }
 
     .navbar{
@@ -228,7 +228,9 @@
 /* HOMEPAGE */
 
 	.main-hero {
-		background-color: #fefefe;
+		/*background-color: #fefefe;*/
+		background-image: url("../images/avatar-img1.jpg");
+		background-size: cover;
 	}
 
 	.avatar {
@@ -243,7 +245,7 @@
 	}
 
 	.intro-hr {
-		font-size: 80px;
+		font-size: 110px;
 		margin-bottom: 10px;
 	}
 
@@ -256,7 +258,7 @@
 	}
 
 	.case-studies {
-		background-color: #d3d3d3; 
+		/*background-color: #d3d3d3;*/
 		margin-top: 32px;
 	}
 
@@ -542,9 +544,10 @@
 	}
 
 	.main-hero-container {
-		grid-column-start: 5;
-		grid-column-end: 13;
-		height: 130vh;
+		grid-column-start: 4;
+		grid-column-end: 14;
+		margin-top: 180px;
+		height: 100vh;
 		justify-content: center;
 		flex-direction: column;
 		display: flex;
