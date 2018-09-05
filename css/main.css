@@ -746,6 +746,7 @@
  		.fs-app {
 			grid-column-start: 10;
 		}
+
  	}
 
 	@media screen and (min-width: 1224px) {
@@ -878,6 +879,13 @@
 			width: 334px;
 			height: 332px;
 		}
+
+		/* CC PAGE */
+
+		.cc-phone-img {
+			height: auto;
+			width: 100%;
+		}
 	}
 
 	@media screen and (max-width: 868px) {
@@ -886,6 +894,23 @@
 			grid-column-start: 6;
 			grid-column-end: span 3;
 			width: 83%;
+		}
+
+		.cc-phone-image {
+			width: 249px;
+			height: 510px;
+		}
+
+		.cs-hero-container {
+			
+		}
+
+		.cc-hero-1 {
+			grid-column-start: 2;
+		}
+
+		.cc-hero-2 {
+			grid-column-start: 5;
 		}
 
 		/* FOODSWITCH PAGE */
@@ -907,6 +932,16 @@
 		/*.cc-case, .fs-app {
 			grid-column-start: 3;
 		}*/
+	}
+
+	@media screen and (max-width: 1024px) {
+		.cc-hero-hr {
+			font-size: 51px;
+		}
+
+		.cc-phone-img {
+
+		}
 	}
 
 	@media screen and (max-width: 660px) {
