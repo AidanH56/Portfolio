@@ -91,6 +91,7 @@
 
     .logo-container {
         /* margin-left: 70px; */
+        margin-left: -16px;
     }
 
     .navbar{
@@ -229,7 +230,8 @@
 
 	.main-hero {
 		/*background-color: #fefefe;*/
-		background-image: url("../images/avatar-img1.jpg");
+		background: linear-gradient(          rgba(0,0,0,0.4),           rgba(0,0,0,.8)),        url("../images/avatar-img1.jpg");
+		/*background-image: url("../images/avatar-img1.jpg");*/
 		background-size: cover;
 	}
 
@@ -245,14 +247,14 @@
 	}
 
 	.intro-hr {
-		font-size: 110px;
+		font-size: 118px;
 		margin-bottom: 10px;
 		color: #fff;
 	}
 
 	.intro-p {
-color: #fff;
-}
+		color: #fff;
+	}
 
 	.intro-btn {
 
@@ -545,10 +547,11 @@
 	}
 
 	.main-hero-container {
-		grid-column-start: 4;
-		grid-column-end: 14;
+		grid-column-start: 3;
+		grid-column-end: 15;
 		margin-top: 180px;
 		height: 100vh;
+		padding-bottom: 48px;
 		justify-content: center;
 		flex-direction: column;
 		display: flex;
