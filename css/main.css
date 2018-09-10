@@ -80,13 +80,14 @@
 /* Nav Bar */
 	header {
 		padding: 4px;
-  		background-color: #4c212c;
-  		display: flex;
-  		align-items: center;
-  		z-index: 100;
-  		position: fixed;
-  		width: 100%;
-  		justify-content: space-between;
+		background-color: rgb(76, 33, 44);
+		display: flex;
+		align-items: center;
+		z-index: 100;
+		position: fixed;
+		opacity: 0.8;
+		width: 100%;
+		justify-content: space-between;
 	}
 
     .logo-container {
@@ -230,7 +231,8 @@
 
 	.main-hero {
 		/*background-color: #fefefe;*/
-		background: linear-gradient(          rgba(0,0,0,0.4),           rgba(0,0,0,.8)),        url("../images/avatar-img1.jpg");
+		background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,.8)), 
+									url("../images/avatar-img3.jpg");
 		/*background-image: url("../images/avatar-img1.jpg");*/
 		background-size: cover;
 	}
@@ -248,12 +250,13 @@
 
 	.intro-hr {
 		font-size: 118px;
-		margin-bottom: 10px;
+		margin-bottom: -20px;
 		color: #fff;
 	}
 
 	.intro-p {
 		color: #fff;
+		margin-top: 0;
 	}
 
 	.intro-btn {
@@ -262,7 +265,8 @@
 
 	.case-studies {
 		/*background-color: #d3d3d3;*/
-		margin-top: 32px;
+		/* margin-top: 32px; */
+		margin: 100px 0;
 	}
 
 	.case-study-hr {
@@ -271,25 +275,25 @@
 		margin-top: 0;
 	}
 
-	.cc-app {
+	.cc-img {
 		grid-column-start: 3;
 		grid-column-end: span 6;
-		margin-top: 72px;
 	}
 
 	.cc-case, .fs-case {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 95vh;
+		/* height: 95vh; */
 	}
 
 	.cc-case {
 		grid-column-start: 10;
 		grid-column-end: span 5;
+		/* margin: 100px 0; */
 	}
 
-	.fs-app {
+	.fs-img {
 		grid-column-start: 9;
 		grid-column-end: span 6;
 		margin-top: 69px;
@@ -549,7 +553,7 @@
 	.main-hero-container {
 		grid-column-start: 3;
 		grid-column-end: 15;
-		margin-top: 180px;
+		margin-top: 160px;
 		height: 100vh;
 		padding-bottom: 48px;
 		justify-content: center;
@@ -889,6 +893,12 @@
 	}
 
 	@media screen and (max-width: 868px) {
+		/* HOME PAGE */
+		.case-study-hr {
+			
+		}
+
+
 		/* COMICCRUSADE PAGE */
 		.cc-hero-img {
 			grid-column-start: 6;
@@ -939,9 +949,6 @@
 			font-size: 51px;
 		}
 
-		.cc-phone-img {
-
-		}
 	}
 
 	@media screen and (max-width: 660px) {
