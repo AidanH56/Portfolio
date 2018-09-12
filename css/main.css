@@ -499,6 +499,11 @@
 		height: 140vh;
 	}
 
+	.cc-hero-imgs {
+		grid-column-start: 11;
+		grid-column-end: 14;
+	}
+
 	/*.cc-hero-1 {
 		grid-column-start: 9;
 	}
