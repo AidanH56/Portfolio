@@ -215,13 +215,13 @@
 
 /* GRID */
 
-	.main-content {
+	/*.main-content {
 		display: grid;
 		grid-template-columns: 300px auto 300px;
 		grid-template-rows: auto;
 		grid-template-areas: "... content ...";
 		grid-gap: 16px;
-	}
+	}*/
 
 	.main-grid {
 		display: grid;
@@ -288,13 +288,11 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		/* height: 95vh; */
 	}
 
 	.cc-case {
 		grid-column-start: 10;
 		grid-column-end: span 5;
-		/* margin: 100px 0; */
 	}
 
 	.fs-img {
@@ -335,7 +333,7 @@
 
 	.hero-container {
 		grid-row: 1;
-		grid-column: 2/3;
+		/*grid-column: 2/3;*/
 		margin-top: 100px;
 		padding: 50px 0 50px 0;
 	}
@@ -350,15 +348,16 @@
 	}
 
 	.main, .skills-tools, .connect, .test-img, .about-me {
-		grid-area: content;
+		grid-column-start: 3;
+		grid-column-end: 15;
 	}
 
 	.main {
-		grid-row: 2;
+		/*grid-row: 2;*/
 	}
 
 	.skills-tools {
-		grid-row: 3;
+		
 	}
 
 	.skills {
@@ -369,14 +368,11 @@
 		float: right;	
 	}
 
-	.connect {
-		display: grid;
-		grid-template-columns: 200px auto 200px;
-		grid-gap: 16px;
-	}
+
 
 	.connect-container {
-		grid-column: 2;
+		grid-column-start: 6;
+		grid-column-end: 12;
 		text-align: center;
 		margin-bottom: 32px;
 	}
@@ -397,6 +393,7 @@
 
 	.cs-hero-hr, .cs-hero-p {
 		color: #333333;
+		margin: 1rem 0;
 	}
 
 	.cs-hero-w {
@@ -496,12 +493,14 @@
 		justify-content: center;
 		display: flex;
 		flex-direction: column;
-		height: 140vh;
+		/*height: 140vh;*/
 	}
 
 	.cc-hero-imgs {
-		grid-column-start: 11;
+		grid-column-start: 10;
 		grid-column-end: 14;
+		display: flex;
+		padding: 200px 0 100px 0;
 	}
 
 	/*.cc-hero-1 {
@@ -554,9 +553,12 @@
 	.cs-hero-container {
 		grid-column-start: 3;
 		grid-column-end: 8;
-		margin-top: 170px; 
-	    margin-bottom: 32px; 
-		padding-bottom: 32px; 
+		/* margin-top: 170px; */
+		/* margin-bottom: 32px; */
+		/* padding-bottom: 32px; */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 
 	.main-hero-container {
@@ -937,7 +939,7 @@
 
 		.cc-case, .fs-case {
 			grid-column-end: span 6;
-			height: 85vh;
+			/* height: 85vh; */
 		}
 
 		.cc-app, .fs-app {
@@ -1063,6 +1065,7 @@
 
 		figcaption {
 			margin-bottom: 10px;
+			font-size: 18px;
 		}
 
 		.main-hero-container {
@@ -1072,11 +1075,11 @@
 
 		.intro-hr {
 			font-size: 60px;
-			line-height: 80px;
+			line-height: 1;
 		}
 
 		.intro-p {
-			margin-top: 16px;
+			margin-top: 32px;
 		}
 
 		.fs-img {
