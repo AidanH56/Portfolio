@@ -40,12 +40,11 @@
 
 	p {
 		font-size: 22px;
-		/*font-size: 18px;*/
+		/* font-size: 18px; */
 		font-weight: 400;
 		color: #212529;
 		margin-top: 1rem;
 		margin-bottom: 25px;
-
 	}
 
 	.connect-link {
@@ -721,43 +720,31 @@
 	}
 
 	.fs-ur-1, .fs-ur-2, .fs-ur-3 {
-		width: 85%;
+		/* width: 85%; */
 	}
 
 	.fs-ur-1 {
-		grid-column-start: 1;
+		grid-column-start: 3;
 		grid-column-end: span 3;
-		margin-left: 11%;
+		/* margin-left: 11%; */
 	}
 
 	.fs-ur-2 {
-		grid-column-start: 4;
-		grid-column-end: span 2;
+		grid-column-start: 7;
+		grid-column-end: span 3;
 	}
 
 	.fs-ur-3 {
-		grid-column-start: 7;
-		grid-column-end: span 2;
+		grid-column-start: 11;
+		grid-column-end: span 4;
 	}
 
 	.fs-ur-1, .fs-ur-3 {
-		margin-right: 32px;
+		/* margin-right: 32px; */
 	}
 
-	.fs-sw-strengths {
-		background-color: #00aab2;
-	}
-
-	.fs-sw-weaknesses {
-		background-color: #0f7c79;
-	}
-
-	.fs-sw-opportunities {
+	.fs-sw-strengths, .fs-sw-weaknesses, .fs-sw-opportunities, .fs-sw-threats {
 		background-color: #16c1c1;
-	}
-
-	.fs-sw-threats {
-		background-color: #079393;
 	}
 
 /* MEDIA QUERIES */
