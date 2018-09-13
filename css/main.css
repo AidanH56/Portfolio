@@ -398,6 +398,7 @@
 
 	.cs-hero-w {
 		color: #ffffff;
+		margin: 1rem 0;
 	}
 
 	.button {
@@ -551,7 +552,7 @@
 	}
 
 	.cs-hero-container {
-		grid-column-start: 3;
+		grid-column-start: 2; /* originally 3 */
 		grid-column-end: 8;
 		/* margin-top: 170px; */
 		/* margin-bottom: 32px; */
@@ -707,12 +708,16 @@
 	}
 
 	.fs-hero-img {
-		grid-column-start: 5;
-		margin-top: 170px;
+		grid-column-start: 9;
+		/* margin-top: 170px; */
 		margin-bottom: 60px;
-		height: auto;
+		/* height: auto; */
 		display: block;
-		width: 100%;
+		/* width: 100%; */
+		width: 551px;
+		height: 408px;
+		display: flex;
+		padding: 200px 0;
 	}
 
 	.fs-ur-1, .fs-ur-2, .fs-ur-3 {
