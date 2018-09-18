@@ -234,10 +234,10 @@
 
 	.main-hero {
 		/*background-color: #fefefe;*/
-		background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,.8)), 
-									url("../images/avatar-img3.jpg");
+		background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,.8)),            url("../images/avatar-img3.jpg") no-repeat right center scroll;
 		/*background-image: url("../images/avatar-img1.jpg");*/
 		background-size: cover;
+		/* background: no-repeat; */
 	}
 
 	.avatar {
