@@ -94,7 +94,7 @@
 	}
 
     .logo-container {
-        margin-left: -16px;
+        margin-left: 24px;
     }
 
     .navbar{
@@ -194,7 +194,7 @@
 		overflow: hidden;
 		text-align: right;
 		float: right;
-		margin-right: 16px;
+		margin-right: 63px;
 	}
 
 	.nav-links li {
@@ -319,6 +319,11 @@
 	.about-hero-hr {
 		margin-top: 60px;
 		font-size: 60px;
+	}
+
+	.about-hero-img {
+		grid-column-start: 3;
+		grid-column-end: 15;
 	}
 
 	.avatar-img {
