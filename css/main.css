@@ -208,8 +208,7 @@
 	}
 
 	.nav-link:hover{
-		background-color: #ffffff;
-		color: #333333;
+		text-decoration: underline;
 	}
 
 /* GRID */
