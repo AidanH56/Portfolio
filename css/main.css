@@ -335,14 +335,6 @@
 		grid-column-end: 15;
 	}
 
-	.main {
-		/*grid-row: 2;*/
-	}
-
-	.skills-tools {
-		
-	}
-
 	.skills {
 		float: left;
 	}
@@ -350,8 +342,6 @@
 	.tools {
 		float: right;	
 	}
-
-
 
 	.connect-container {
 		grid-column-start: 6;
@@ -376,11 +366,6 @@
 
 	.cs-hero-hr, .cs-hero-p {
 		color: #333333;
-		margin: 1rem 0;
-	}
-
-	.cs-hero-w {
-		color: #ffffff;
 		margin: 1rem 0;
 	}
 
@@ -465,19 +450,14 @@
 
 /* COMICCRUSADE PAGE */
 	.cc-hero {
-		background: linear-gradient(to bottom left, #ff8600, #e07307);
 		padding-bottom: 60px;
+		border-bottom: 10px solid #ff8600;
 	}
 
 	.cc-hero-1, .cc-hero-2 {
-		/* margin-top: 110px; */
-		/*grid-column-end: span 3;*/
-		/* vertical-align: top; */
-		/* height: 210vh; */
 		justify-content: center;
 		display: flex;
 		flex-direction: column;
-		/*height: 140vh;*/
 	}
 
 	.cc-hero-imgs {
@@ -491,40 +471,14 @@
 		display: none;
 	}
 
-	/*.cc-hero-1 {
-		grid-column-start: 9;
-	}
-
-	.cc-hero-2 {
-		grid-column-start: 12;
-	} */
-
-	/*.cc-phone-img {
-		display: block;
-		width: 231px;
-		height: 461px;
-	}*/
-
 	.cc-phone-img {
 		display: inline-flex;
 	}
-
-	/*.cc-hero-img {
-		grid-column-start: 7;
-		margin-top: 120px;
-		margin-bottom: 48px;
-		height: auto;
-		display: block;
-		width: 93%;
-	}*/
-
 
 	.intro {
 		grid-column-start: 5;
 		grid-column-end: span 8;
 		margin-top: 16px;
-		/* margin-left: 12px; */
-		/* margin-right: 48px; */
 	}
 
 	.ur-point-1, .ur-point-3, .cc-prototype-img {
@@ -542,9 +496,7 @@
 	.cs-hero-container {
 		grid-column-start: 2; /* originally 3 */
 		grid-column-end: 8;
-		/* margin-top: 170px; */
-		/* margin-bottom: 32px; */
-		/* padding-bottom: 32px; */
+		margin-top: 100px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -562,7 +514,6 @@
 	}
 
 	.flows {
-		/* margin-left: 48px; */
 		margin-top: 36px;
 		grid-column-end: span 13;
 	}
@@ -575,11 +526,7 @@
 	.user-research, .research-conclusion, .personas, .analysis-intro, 
 		.swot-p, .user-stories, .user-flows, .wireframes, 
 		.testing-intro, .challenge, .prototype, .conclusion {
-		/*grid-column-start: 2;
-		margin-left: 11%;
-		margin-right: 9%;*/
 		grid-column-start: 4;
-		/* margin-left: 18px; */
 	}
 
 	.user-stories, .wireframes {
@@ -652,9 +599,7 @@
 		display: grid;
 		max-width: 1000px;
 		grid-template-columns: 1fr 1fr;
-		/*grid-template-rows: 1fr 1fr;*/
 		grid-template-rows: 1fr;
-		/*grid-gap: 10px;*/
 		grid-gap: 7px;
 		background-color: #616161;
 		border: 10px solid #616161;
@@ -677,27 +622,16 @@
 		background-color: #f88337;
 	}
 
-	/*.cc-sw-weaknesses {
-		background-color: #c6622a;
-	}
-
-	.cc-sw-opportunities {
-		background-color: #FF9C5C;
-	}
-
-	.cc-sw-threats {
-		background-color: #DF600D;
-	}*/
-
 /* FOODSWITCH PAGE */
 
 	.fs-hero {
-		background: linear-gradient(to bottom left, #00aab2, #079393);
+		border-bottom: 10px solid #00aab2;
 	}
 
 	.fs-hero-img-container {
 		grid-column-start: 9;
 		grid-column-end: span 7;
+		margin-top: 140px;
 		padding: 200px 0;
 	}
 
@@ -712,7 +646,6 @@
 	.fs-ur-1 {
 		grid-column-start: 3;
 		grid-column-end: span 3;
-		/* margin-left: 11%; */
 	}
 
 	.fs-ur-2 {
@@ -723,10 +656,6 @@
 	.fs-ur-3 {
 		grid-column-start: 11;
 		grid-column-end: span 4;
-	}
-
-	.fs-ur-1, .fs-ur-3 {
-		/* margin-right: 32px; */
 	}
 
 	.fs-sw-strengths, .fs-sw-weaknesses, .fs-sw-opportunities, .fs-sw-threats {
@@ -891,6 +820,7 @@
 		.fs-hero-img-container {
 			grid-column-start: 2;
 			grid-column-end: span 14;
+			margin-top: 0;
 		}
 
 		.fs-hero-container {
@@ -915,6 +845,7 @@
 				grid-column-start: 10;
 				grid-column-end: 14;
 				display: flex;
+				margin-top: 20px;
 				padding: 200px 0 100px 0;
 			}
 
@@ -1099,10 +1030,13 @@ flex-direction: column;
 			grid-column-end: 15;
 		}
 
-		/*PUT LOGO-HR HERE AFTER FIXING LOGO!*/
-		.cc-hero-img, .fs-hero-img-container, .flows {
+		.cc-hero-img, .flows {
 			display: none;
 		}
+
+	    .fs-hero-img-container {   	
+			padding: 0 0 70px 0;
+	    }
 
 		.logo-hr {
 			line-height: 20px;
