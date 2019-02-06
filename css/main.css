@@ -223,7 +223,8 @@
 /* HOMEPAGE */
 
 	.main-hero {
-		background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,.8)),                url("../images/avatar-img.png") no-repeat top center scroll;
+		background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,.8)),                
+			url("../images/avatar-img3.png") no-repeat top center scroll;
 		background-size: cover;
 	}
 
